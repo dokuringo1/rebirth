@@ -1718,7 +1718,7 @@ transition-delay:0.8s;
 -webkit-transition-delay:0.8s;
 }
 .effect.start {
-    padding-top: 250px;
+    padding-top: 350px;
 	opacity: 1;
 	filter: alpha(opacity=100);
 	-ms-filter: "alpha( opacity=100 )";
@@ -2115,6 +2115,16 @@ dl.faq dd {
 }
 
 
+.child_base {
+    overflow: hidden;
+    width: 90%;
+    background-color: #F3F3F3;
+    text-align: center;
+    float: inherit;
+    margin: auto;
+    display: block;
+}
+
 .child {
  float: left;
 }
@@ -2123,5 +2133,8 @@ dl.faq dd {
     color: #fff;
     text-align: center;
     line-height: 100px;
-    width: 33%;
+    width: color: #fff;
+    text-align: center;
+    line-height: 100px;
+    width: 25%;
 }
