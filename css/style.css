@@ -1369,7 +1369,6 @@ footer .cont_wrap .f_box.lg {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background-color: #000000;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -1423,7 +1422,7 @@ footer .cont_wrap .f_box.lg {
 .loop_wrap ul li a {
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: #1e1e1e;
     text-align: center;
     line-height: 1.6;
     font-size: 14px;
@@ -2169,10 +2168,9 @@ font-size: 14px;
     color: #000;
     text-align: left;
     font-size: 14px;
-    background: #ffffff;
 }
 .col_3 > div{
-	width: 24%;
+	width: 25%;
 }
 @media screen and (max-width: 1090px) {
 	.col_3 > div{
