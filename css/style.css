@@ -2175,7 +2175,6 @@ font-size: 14px;
 }
 .col_3 > div{
 	width: 24%;
-	padding: 10px;
 }
 @media screen and (max-width: 1090px) {
 	.col_3 > div{
@@ -2185,7 +2184,7 @@ width: 50%;
 }
 @media screen and (max-width: 480px) {
 	.col_3 > div{
-		width: 100%;
+		width: 50%;
 	}
 }
 
