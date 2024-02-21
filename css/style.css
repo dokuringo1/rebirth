@@ -70,7 +70,7 @@ a {
 	transition: 0.2s linear;
 }
 a:hover {
-	color: #FFBF00;
+	color: #4a4c4d;
 	text-decoration: none;
 }
 
@@ -294,20 +294,17 @@ header h1 a img {
 }
 
 .content h3 {
-	font-size: 24px;
-	line-height: 30px;
-	margin-bottom: 30px;
-	position: relative;
-	margin-top: 30px;
-	padding-top: 15px;
-	padding-right: 10px;
-	padding-bottom: 15px;
-	padding-left: 44px;
-	font-weight: normal;
-	color: #333;
-	font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "Sawarabi Mincho", "HG明朝E",  "ＭＳ Ｐ明朝", "MS PMincho", serif;
-	clear: both;
-	letter-spacing: 0.05em;
+    font-size: 24px;
+    line-height: 30px;
+    position: relative;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 44px;
+    font-weight: 550;
+    color: #333;
+    font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "Sawarabi Mincho", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    clear: both;
+    letter-spacing: 0.05em;
 }
 
 .content h3::after {
@@ -327,6 +324,10 @@ header h1 a img {
 	font-family: "游ゴシック", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "ＭＳ ゴシック", "MS Gothic", sans-serif;
 	padding-left: 15px;
 }
+
+
+
+
 .content h4 {
 font-size: 20px;
     color: #b00000;
@@ -678,7 +679,7 @@ footer .box_pr {
 	width: 96%;
 	margin-top: 20px;
 	margin-right: auto;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	margin-left: auto;
 }
 .content table.table_01 th,
@@ -963,6 +964,8 @@ body {
 -------------------------------------------*/
 header {
 	height: 90px;
+background-color: rgb(246 246 246 / 24%);
+
 }
 
 
@@ -1031,7 +1034,7 @@ PCグローバルナビ
 }
 
 #g_navi li a:hover {
-	color: #FFBF00 !important;
+	color: #4a4c4d !important;
 }
 
 header.txt_w #g_navi li a {
@@ -1132,6 +1135,11 @@ img {
 }
 
 .content h4 {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.content h5 {
 	margin-right: 10px;
 	margin-left: 10px;
 }
@@ -2278,13 +2286,17 @@ font-size: 12px;
 
 
 h6 {
-  position: relative;
-  padding: 1rem 2rem;
-  text-align: center;
-  border: 3px solid #000;
-  border-radius: 0 10px 10px 10px;
-  max-width: 50%;
-  font-size: 14px;
+position: relative;
+    padding: 1rem 2rem;
+    text-align: left;
+line-height: 1.4;
+
+    border: 3px solid #000;
+    border-radius: 0 10px 10px 10px;
+    max-width: 100%%;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: 30px;
 }
 
 h6:before {
@@ -2323,16 +2335,47 @@ h6:before {
 }
 
 
+.wrap_box {
+    width: 96%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
 
-h5 {
-    color: #333;
-    text-decoration: 2px underline wavy #E056DB;
-    text-underline-offset: 5px;
+
+
+.content h5 {
+    color: #121212;
     text-align: left;
     font-weight: bold;
     font-size: 24px;
-    padding: 10px 0 0 40px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
+
+.content h5::after {
+	display: block;
+	width: 3px;
+	height: 20px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background-color: #111;
+	content: '';
+}
+
+.content h5 span {
+	font-size: 15px;
+	color: #555;
+	font-family: "游ゴシック", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "ＭＳ ゴシック", "MS Gothic", sans-serif;
+	padding-left: 15px;
+}
+
+
+
 
 .box2 {
     padding: 10px;
@@ -2405,3 +2448,4 @@ h7 {
 
 
 
+ 
