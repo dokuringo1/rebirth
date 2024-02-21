@@ -732,19 +732,24 @@ font-size: 14px;
 
 
 .content table.table_02 {
-	width: 96%;
-	margin-top: 20px;
-	margin-right: auto;
-	margin-bottom: 10px;
-	margin-left: auto;
+    width: 96%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    font-family: "Noto Sans JP", Sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 1.3px;
 }
 .content table.table_02 th,
 .content table.table_02 td {
 	border-bottom-width: 1px;
-	border-bottom-style: dotted;
 	border-bottom-color: #888;
 	padding: 10px;
 	vertical-align: top;
+
 }
 .content table.table_02 th {
 	font-size: 16px;
@@ -752,6 +757,7 @@ font-size: 14px;
 	font-weight: normal;
 	letter-spacing: 1px;
 	width: 33%;
+	background: #fff;
 
 }
 .content table.table_02 td {
@@ -2344,30 +2350,25 @@ font-size: 12px;
 
 
 h6 {
-position: relative;
-    padding: 1rem 2rem;
-    text-align: left;
-line-height: 1.4;
-
-    border: 3px solid #000;
-    border-radius: 0 10px 10px 10px;
-    max-width: 100%%;
-    font-size: 14px;
+    position: relative;
+    margin: 80px 0 20px 0;
+    padding: 5px 0 5px 30px;
+    border-bottom: 1px solid #533536;
+    font-size: 24px;
+    font-weight: bold;
+    color: #533536;
     margin-left: 25px;
-    margin-top: 30px;
 }
 
 h6:before {
-  font-size: 14px;
-  position: absolute;
-  top: -24px;
-  left: -3px;
-  height: 24px;
-  padding: 0 1em;
-  content: 'POINT';
-  color: #fff;
-  border-radius: 10px 10px 0 0;
-  background: #000;
+content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 10px;
+    height: 100%;
+    background-color: #533536;
 }
 
 
@@ -2448,10 +2449,16 @@ h6:before {
 }
 
 .my-stx-high {
-background-color: #d8e6ff;
-    letter-spacing: normal;
-    padding: 10px;
-    margin: 10px;
+font-size: 11px !important;
+    font-weight: 400 !important;
+    /* line-height: 26px !important; */
+    text-shadow: -1px -1px 0px rgba(0,0,0,.44), 1px -1px 0px rgba(0,0,0,.44), -1px 1px 0px rgba(0,0,0,.44), 1px 1px 0px rgba(0,0,0,.44);
+    font-family: Meiryo !important;
+    color: #fff;
+    border-bottom: 1px solid #3c0201;
+    background: #a32e2b;
+    padding: 10px!important;
+    letter-spacing: 1px;
 }
 
 .blue-p {
