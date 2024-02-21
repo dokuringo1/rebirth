@@ -703,6 +703,7 @@ font-size: 14px;
     background-color: #FFF;
 }
 
+
 .small {
 	font-size: smaller;
 	color: #666;
@@ -725,6 +726,55 @@ font-size: 14px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
 }
 .table_01 th span {
+	font-size: 12px;
+	color: #CCC;
+}
+
+
+.content table.table_02 {
+	width: 96%;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+.content table.table_02 th,
+.content table.table_02 td {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #888;
+	padding: 10px;
+	vertical-align: top;
+}
+.content table.table_02 th {
+	font-size: 16px;
+	white-space: nowrap;
+	font-weight: normal;
+	letter-spacing: 1px;
+	width: 33%;
+
+}
+.content table.table_02 td {
+    line-height: 1.5;
+    background-color: #FFF;
+}
+
+
+
+.table_02 caption {
+	font-size: 14px;
+	line-height: 30px;
+	background-color: #E5E5E5;
+	color: #111;
+	letter-spacing: 1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid #FFF;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
+}
+.table_02 th span {
 	font-size: 12px;
 	color: #CCC;
 }
@@ -1674,6 +1724,14 @@ textarea {
 
 }
 
+.content table.table_02 th,
+.content table.table_02 td {
+	width: 100% !important;
+
+display: block;
+
+}
+
 .content table.table_01 th {
 	background-color: #F6F6F6;
 }
@@ -2339,7 +2397,6 @@ h6:before {
     width: 96%;
     margin-top: 20px;
     margin-right: auto;
-    margin-bottom: 30px;
     margin-left: auto;
 }
 
@@ -2391,10 +2448,10 @@ h6:before {
 }
 
 .my-stx-high {
-    background-color: #d8e6ff;
+background-color: #d8e6ff;
     letter-spacing: normal;
-    padding: 7px;
-    font-weight: 550;
+    padding: 10px;
+    margin: 10px;
 }
 
 .blue-p {
