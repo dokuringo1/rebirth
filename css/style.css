@@ -2557,6 +2557,37 @@ content: "";
 
 
 .line_yellow {
+    display: inline;
+    background-position: left -100% center;
+    padding-bottom: 2em;
+    font-weight: bold;
+    background-size: 200% 0.6em;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgb(255 215 18) 50%);
+    transition: background-position 2s ease 0.1s;
+}
+.line_red {
+    display: inline;
+    background-position: left -100% center;
+    padding-bottom: 2em;
+    font-weight: bold;
+    background-size: 200% 0.6em;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgb(218 0 43) 50%);
+    transition: background-position 2s ease 0.1s;
+}
+.line_or {
+    display: inline;
+    background-position: left -100% center;
+    padding-bottom: 1em;
+    font-weight: bold;
+    background-size: 200% 0.6em;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgb(255 222 98) 50%);
+    transition: background-position 2s ease 0.1s;
+}
+
+.line_yellow2 {
     background: linear-gradient(transparent 70%,#fff001 40%);
 }
 
