@@ -294,17 +294,14 @@ header h1 a img {
 }
 
 .content h3 {
-    font-size: 24px;
+    font-size: 16px;
     line-height: 30px;
     position: relative;
     padding-top: 15px;
-    padding-right: 10px;
-    padding-left: 44px;
     font-weight: 550;
     color: #333;
-    font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "Sawarabi Mincho", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
     clear: both;
-    letter-spacing: 0.05em;
+    letter-spacing: 1px;
 }
 
 .content h3::after {
@@ -485,22 +482,19 @@ a.ap {
 コンテンツ大ボタン
 -------------------------------------------*/
 .btn_cnt a {
-	font-size: 16px;
-	color: #FFBF00;
-	text-align: center;
-	text-decoration: none;
-	display: block;
-	width: 240px;
-	margin-top: 20px;
-	margin-right: auto;
-	margin-bottom: 30px;
-	margin-left: auto;
-	line-height: 22px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	clear: both;
-	font-weight: bold;
-	border: 1px solid #FFBF00;
+    font-size: 16px;
+    color: #FFBF00;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin-top: 10px;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    clear: both;
+    font-weight: bold;
+    border: 1px solid #FFBF00;
 }
 
 .btn_cnt.cl_2 a,
@@ -842,9 +836,7 @@ font-size: 14px;
 	color: #CCC;
 }
 
-
-
-
+/*　-------次-------　*/
 
 .content table.table_04 {
     width: 100%;
@@ -880,8 +872,6 @@ font-size: 14px;
 
 }
 
-
-
 .table_04 caption {
 	font-size: 14px;
 	line-height: 30px;
@@ -900,6 +890,151 @@ font-size: 14px;
 	color: #CCC;
 }
 
+/*　-------次-------　*/
+
+.content table.table_05 {
+    width: 100%;
+    font-family: "Noto Sans JP", Sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 1.3px;
+    border: solid 1px #AA9062;
+    background: #e5eaea;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.content table.table_05 th,
+.content table.table_05 td {
+	border-bottom-width: 1px;
+	border-bottom-color: #888;
+	padding: 5px;
+	vertical-align: top;
+
+}
+.content table.table_05 th {
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    border: solid 1px #AA9062;
+    color: #000;
+    background: #cfcfcf;
+
+}
+
+.content table.table_05 td {
+    vertical-align: middle;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    border: solid 1px #AA9062;
+    color: #000;
+    background: #ffffff;
+    text-align: center;
+
+}
+
+.table_05 caption {
+	font-size: 14px;
+	line-height: 30px;
+	background-color: #E5E5E5;
+	color: #111;
+	letter-spacing: 1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid #FFF;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
+}
+.table_05 th span {
+	font-size: 12px;
+	color: #CCC;
+}
+
+/*　-------次-------　*/
+
+.content table.table_06 {
+
+    font-family: "Noto Sans JP", Sans-serif;
+font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 1.3px;
+
+}
+.content table.table_06 th,
+.content table.table_06 td {
+	border-bottom-width: 1px;
+	border-bottom-color: #888;
+	padding: 5px;
+	vertical-align: top;
+
+
+}
+.content table.table_06 th {
+font-size: 13px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-weight: 500;
+    width: 25%;
+    text-align: left;
+
+
+}
+.content table.table_06 td {
+    line-height: 1.6;
+    vertical-align: middle;
+	width: 25%;
+
+}
+
+.table_06 caption {
+	font-size: 14px;
+	line-height: 30px;
+	background-color: #E5E5E5;
+	color: #111;
+	letter-spacing: 1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid #FFF;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
+}
+.table_04 th span {
+	font-size: 12px;
+	color: #CCC;
+}
+
+/*　-------次-------　*/
+.content table.table_07 {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+.content table.table_07 th,
+.content table.table_07 td {
+
+	vertical-align: top;
+}
+.content table.table_07 th {
+    font-weight: normal;
+    letter-spacing: 1px;
+    width: calc(100% / 6);
+    text-align: center;
+}
+.content table.table_07 td {
+    font-weight: normal;
+    letter-spacing: 1px;
+    width: calc(100% / 6);
+    text-align: center;
+
+}
+/*　-------次-------　*/
 
 /*
 トップ下部ピックアップ
@@ -1274,8 +1409,16 @@ header.txt_w.fixed #g_navi li a {
 	background-image: url(../img/topthumbnail/sub_top_derin.jpg);
 }
 
+#sub_top.yaty {
+	background-image: url(../img/topthumbnail/sub_top_yaty.jpg);
+}
+
 #sub_top.creature {
 	background-image: url(../img/topthumbnail/sub_top_creature.jpg);
+}
+
+#sub_top.kaihou {
+	background-image: url(../img/topthumbnail/sub_top_kaihou.jpg);
 }
 
 #sub_top.haken {
@@ -1600,6 +1743,14 @@ header #info {
 	background-image: url(../img/topthumbnail/sub_top_creature.jpg);
 }
 
+#sub_top.kaihou {
+	background-image: url(../img/topthumbnail/sub_top_kaihou.jpg);
+}
+
+#sub_top.yaty {
+	background-image: url(../img/topthumbnail/sub_top_yaty.jpg);
+}
+
 #sub_top.ihou {
 	background-image: url(../img/topthumbnail/sub_top_ihou.jpg);
 }
@@ -1648,8 +1799,16 @@ header #info {
 	background-image: url(../img/topthumbnail/sub_top_derin.jpg);
 }
 
+#sub_top.yaty {
+	background-image: url(../img/topthumbnail/sub_top_yaty.jpg);
+}
+
 #sub_top.creature {
 	background-image: url(../img/topthumbnail/sub_top_creature.jpg);
+}
+
+#sub_top.kaihou {
+	background-image: url(../img/topthumbnail/sub_top_kaihou.jpg);
 }
 
 
@@ -2483,7 +2642,7 @@ dl.faq dd {
     color: #000;
     text-align: left;
     width: 50%;
-font-size: 14px;
+    font-size: 14px;
 }
 
 
@@ -2549,11 +2708,10 @@ font-size: 12px;
 /*吹き出し*/
 .balloon_l,
 .balloon_r{
-  margin: 30px 0;
-  display:flex;
-  justify-content: flex-start;
-  align-items: flex-start; /*縦位置を上揃え*/
-/*   align-items: center; */ /*縦位置を真ん中揃え*/
+    margin: 0 30px 10px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .balloon_r{
   justify-content:flex-end;
@@ -2608,10 +2766,10 @@ font-size: 12px;
 
 h6 {
     position: relative;
-    margin: 10px 0 20px 0;
-    padding: 5px 0 5px 30px;
+    margin: 0 40px 10px 40px;
+    padding: 5px 0 5px 25px;
     border-bottom: 1px solid #533536;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
     color: #533536;
     margin-left: 25px;
@@ -2839,7 +2997,6 @@ h8 {
 .child2 {
     width: 25%;
     text-align: center;
-    line-height: 100px;
 }
 
 .child3 {
@@ -2892,37 +3049,77 @@ h8 {
   display: none;
 }
 
-
-.box-1{ 
-
-    width: 25%;
-    float: left;
-   }
-.box-2{ 
-
-    width: 50%;
-    float: left;
-   }
-.box-3{ 
-
-    width: 25%;
-    float: left;
-   }
-  @media (max-width:767px){
-.box-1{
-      width: 40%;
-      font-size: 13px;
-    }
-.box-2{
-      width: 60%;
-      font-size: 13px;
-    }    
-.box-3{
-      width: 100%;
-      float: none;
-      font-size: 13px;
-    }  
-
-
-
  
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab_label {
+  color: #13c3ac;
+  font-weight: bold;
+  border: solid 2px #13c3ac;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  flex: 1;
+  padding: 5px 0;
+    margin: 0 5px 20px 0px;
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.tab_label:hover {
+  opacity: 0.75;
+}
+
+.tab_content {
+  flex: 100%;
+  display: none;
+  overflow: hidden;
+}
+
+input[name="tab_switch"] {
+  display: none;
+}
+
+.tabs input:checked + .tab_label {
+    color: #fff;
+    background-color: #13c3ac;
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.tabs input:checked + .tab_label::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #13c3ac transparent transparent transparent;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  transition: all 0.3s ease 0s;
+}
+
+#tab01:checked ~ #tab01_content,
+#tab02:checked ~ #tab02_content,
+#tab03:checked ~ #tab03_content,
+#tab04:checked ~ #tab04_content {
+  display: block;
+}
+
+.tab_content{
+  position: relative;
+  animation: fadeIn 1s ease;
+}
+
+
+
+
