@@ -64,7 +64,7 @@ li {
 }
 
 a {
-	color: #000;
+	color: #3381e8;
 	-webkit-transition: 0.2s linear;
 	-moz-transition: 0.2s linear;
 	transition: 0.2s linear;
@@ -3122,4 +3122,122 @@ input[name="tab_switch"] {
 
 
 
+.c-sideheading{
+    font-size: 14px;
+    line-height: 1.5rem;
+    background-color: #fafafa;
+    border-bottom: solid 1px #ccc;
+    padding: 13px 10px 11px;
+    font-weight: bold;
+    color: #404040;
+}
 
+.c-sideheading-p{
+    font-size: 14px;
+    line-height: 1.5rem;
+    background-color: #fff;
+    border-bottom: solid 1px #ccc;
+    padding: 13px 10px 11px;
+    font-weight: bold;
+    color: #404040;
+}
+
+
+
+.box-menu {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.item-1 {
+	width: 25%;
+	padding: 5px;
+}
+.item-2 {
+	width: 50%;
+	padding: 5px;
+}
+.item-3 {
+	width: 25%;
+	padding: 5px;
+}
+
+
+@media screen and (min-width: 751px){
+	.item1:nth-child(3n+1) {
+		margin-left: 0;
+	}
+
+.c-sideheading{
+    font-size: 12px;
+    line-height: 1.5rem;
+    background-color: #fafafa;
+    border-bottom: solid 1px #ccc;
+    padding: 5px;
+    font-weight: bold;
+    color: #404040;
+}
+
+.c-sideheading-p{
+    font-size: 12px;
+    line-height: 1.5rem;
+    background-color: #fff;
+    border-bottom: solid 1px #ccc;
+    padding: 5px;
+    font-weight: bold;
+    color: #404040;
+}
+
+.item-1 {
+	width: 25%;
+	padding: 2px;
+}
+.item-2 {
+	width: 50%;
+	padding: 2px;
+}
+.item-3 {
+	width: 25%;
+	padding: 2px;
+}
+
+}
+
+@media screen and (max-width: 750px){
+.c-sideheading{
+    font-size: 12px;
+    line-height: 1.5rem;
+    background-color: #fafafa;
+    border-bottom: solid 1px #ccc;
+    padding: 5px;
+    font-weight: bold;
+    color: #404040;
+}
+
+.c-sideheading-p{
+    font-size: 12px;
+    line-height: 1.5rem;
+    background-color: #fff;
+    border-bottom: solid 1px #ccc;
+    padding: 5px;
+    font-weight: bold;
+    color: #404040;
+}
+
+.item-1 {
+	width: 30%;
+	padding: 2px;
+}
+.item-2 {
+	width: 50%;
+	padding: 2px;
+}
+.item-3 {
+	width: 20%;
+	padding: 2px;
+}
+}
