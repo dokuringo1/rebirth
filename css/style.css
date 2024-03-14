@@ -340,10 +340,12 @@ font-size: 20px;
 }
 
 .content p {
-	font-size: 16px;
-	padding: 10px;
-	margin-right: 30px;
-	margin-left: 30px;
+margin: 0 40px 0 25px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+
 }
 
 .content .ul_news li {
@@ -679,9 +681,8 @@ footer .box_pr {
 	border-bottom-width: 1px;
 	border-bottom-style: dotted;
 	border-bottom-color: #888;
-	padding: 10px;
-vertical-align: top;
 }
+
 .content table.table_01 th {
 	font-size: 16px;
 	white-space: nowrap;
@@ -691,7 +692,7 @@ vertical-align: top;
 }
 .content table.table_01 td {
 font-size: 14px;
-    line-height: 1.5;
+
 
 }
 
@@ -1035,6 +1036,38 @@ font-size: 13px;
 
 }
 /*　-------次-------　*/
+
+/*　-------次-------　*/
+.content table.table_09 {
+    width: 100%;
+
+}
+.content table.table_09 th,
+.content table.table_09 td {
+    vertical-align: middle;
+}
+.content table.table_09 th {
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    background: #ab7916;
+    color: #fff;
+    padding: 5px;
+    border: solid 1px #000;
+    font-size: 11px;
+    line-height: 15px;
+}
+.content table.table_09 td {
+    font-weight: normal;
+    letter-spacing: 1px;
+    width: calc(100% / 6);
+    text-align: center;
+    padding: 5px;
+    border: solid 1px #000;
+    font-size: 11px;
+}
+/*　-------次-------　*/
+
 
 /*
 トップ下部ピックアップ
@@ -2059,16 +2092,7 @@ SNSボタン
 	padding-top: 100px;
 }
 
-.content {
 
-}
-
-.content p {
-	margin-bottom: 20px;
-	margin-top: 10px;
-	margin-right: 10px;
-	margin-left: 10px;
-}
 
 .img_left,
 .img_right {
@@ -2762,6 +2786,277 @@ font-size: 12px;
   right: -26px;
   border-left: 22px solid #dddadc;
 }
+/*吹き出し*/
+
+/*吹き出し・つよみん*/
+.t-balloon_l,
+.t-balloon_r{
+    margin: 0 30px 10px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.t-balloon_r{
+  justify-content:flex-end;
+}
+.faceicon img{
+  width: 80px; /*任意のサイズ*/
+  height: auto;
+}
+.t-balloon_r .faceicon{
+  margin-left:25px;
+}
+.t-balloon_l .faceicon{
+  margin-right:15px;
+}
+.t-balloon_r .faceicon{
+  order:2 !important;
+}
+.t-says {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border-radius: 12px;
+    background: #f977bc;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0 !important;
+    line-height: 1.5;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    padding: 15px;
+}
+.t-says p{
+  margin:8px 0 0 !important; 
+}
+.t-says p:first-child{
+  margin-top:0 !important;
+}
+.t-says:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+/*   margin-top:-3px;  */
+}
+.t-balloon_l .says:after {
+  left: -26px;
+  border-right: 22px solid #dddadc;
+}
+.t-balloon_r .says:after {
+  right: -26px;
+  border-left: 22px solid #dddadc;
+}
+/*吹き出し・つよみん*/
+
+
+/* 自己紹介 */
+
+/* カード全体 */
+.writer-profile-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 2px dashed #eee;
+    margin: 20px;
+}
+/* カードの右・左共通 */
+.wp-left, .wp-right {
+  padding: 25px 20px;
+}
+/* カードの左側 */
+.wp-left {
+  width: 35%;
+  border-right: 2px dashed #eee;
+  text-align: center;
+}
+/* カードの右側 */
+.wp-right {
+  width: 65%;
+}
+
+/* 左側 */
+
+/* 吹き出し */
+.wp-label {
+  position: relative;
+  margin: 0 0 15px;
+  padding: 10px 15px;
+  border: 1px solid #222;
+  display: inline-block;
+  min-width: 120px;
+  max-width: 100%;
+  border-radius: 20px;
+}
+/* 三角 */
+.wp-label::before,
+.wp-label::after {
+  content: '';
+  border: 14px solid transparent;
+  position: absolute;
+  left: 50%;
+  margin-left: -14px;
+}
+/* 線 */
+.wp-label::before {
+  border-top-color: #222;
+  bottom: -28px;
+}
+/* 地 */
+.wp-label::after {
+  border-top-color: #fff;
+  bottom: -27px;
+}
+/* 吹き出し内のテキスト */
+.wp-label p {
+  color: #222;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* 画像 */
+.wp-img {
+  width: 100px;
+  margin: 10px auto;
+}
+/* 画像を丸く、枠線をつける */
+.wp-img img {
+  border-radius: 50%;
+  border: 2px solid #eee;
+}
+/* 名前 */
+.wp-name {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #6C9FCE;
+}
+/* 職業 */
+.wp-job {
+  color: #7b7b7b;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* 右側 */
+
+/* リストを左揃え・中央寄せに */
+.ul-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* 最後の要素にだけ下に余白をつけない */
+.ul-center ul li:not(:last-child) {
+  padding-bottom: 3px;
+}
+
+/* リストの文字色 */
+.ul-center ul .li-point {
+  color: #7b7b7b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+/* リストの✓マーク */
+.li-point:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  color: #6C9FCE;
+  padding-right: 10px;
+  content: '\f00c';
+  content: '\e61b';
+  font-family: Font Awesome\ 5 Free;
+}
+.fa-twitter::before,
+.fa-twitter-square::before {
+    font-family: vk_sns;
+    content: "\e606";
+  content: '\e61b';
+}
+
+.icon::before {
+  font-family: "Font Awesome 5 Free"; /*←ココ！！！！！！！*/
+  font-weight: 900;
+  content: "\f007";
+  content: '\f00c';
+  content: '\e61b';
+  font-family: Font Awesome\ 5 Free;
+
+}
+.fa-twitter:before {
+    content: '𝕏';
+    font-family: unset;
+    font-weight: bold;
+}
+
+/* 文章を左揃え・中央寄せに */
+.wp-content {
+  text-align: center;
+  display: block;
+}
+/* 文章 */
+.wp-content p {
+  text-align: left;
+  display: inline-block;
+  color: #7b7b7b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+/* SNSボタン全体 */
+.wp-sns {
+  text-align: center;
+    padding: 5px 0 0;
+float: left;
+}
+/* SNSボタン */
+.wp-sns li {
+  display: inline-block;
+  border: 1px solid #222;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0 3px;
+}
+/* SNSボタンにマウスをあてた時の挙動 */
+.wp-sns li:hover{
+  position: relative;
+  top: 1px;
+}
+/* SNSアイコン */
+.wp-sns li a i {
+  font-size: 19px;
+  color: #222;
+}
+/* SNSアイコンの位置 */
+.wp-sns li a i::before {
+  position: relative;
+  top: 3px;
+}
+
+/* 767px（iPad）以下 */
+
+@media (max-width: 767px) {
+  /* カードを縦並びに */
+  .writer-profile-card {
+    display: block;
+  }
+  /* 左右の幅を100%に */
+  .wp-left, .wp-right {
+    width: 100%;
+    padding: 20px;
+  }
+  /* 点線を左から下に */
+  .wp-left {
+    border-right: none;
+    border-bottom: 2px dashed #eee;
+  }
+}
+
 
 
 h6 {
