@@ -3441,24 +3441,28 @@ input[name="tab_switch"] {
 
 .box-menu {
     display: flex;
-    max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
 
 }
 
+
 .item-1 {
-	width: 25%;
-	padding: 5px;
+	width: 37%;
+	padding: 2px;
+	background: #3e1d6e;
 }
 .item-2 {
-	width: 50%;
-	padding: 5px;
+	width: 37.5%;
+	padding: 2px;
+	background: #3e1d6e;
 }
 .item-3 {
 	width: 25%;
-	padding: 5px;
+	padding: 2px;
+	background: #3e1d6e;
 }
 
 
@@ -3487,18 +3491,6 @@ input[name="tab_switch"] {
     color: #404040;
 }
 
-.item-1 {
-	width: 25%;
-	padding: 2px;
-}
-.item-2 {
-	width: 50%;
-	padding: 2px;
-}
-.item-3 {
-	width: 25%;
-	padding: 2px;
-}
 
 }
 
@@ -3523,16 +3515,5 @@ input[name="tab_switch"] {
     color: #404040;
 }
 
-.item-1 {
-	width: 30%;
-	padding: 2px;
-}
-.item-2 {
-	width: 50%;
-	padding: 2px;
-}
-.item-3 {
-	width: 20%;
-	padding: 2px;
-}
+
 }
