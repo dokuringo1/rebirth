@@ -26,15 +26,12 @@ html {
 body {
 	color: #111;
 	background-color: #F6F6F6;
-	font-family: "游ゴシック", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "ＭＳ ゴシック", "MS Gothic", sans-serif;
+	font-family: "Hiragino maru Gothic ProN W4", "Hiragino Kaku Gothic Pro", "Hiragino Sans", "arial", "Meiryo", "MS PGothic", sans-serif !important;
 	word-wrap: break-word;
 	height: 100%;
 	line-height: 2.2;
 }
 
-.font_mincho {
-	font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "Sawarabi Mincho", "HG明朝E",  "ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
 
 section,
 article {
