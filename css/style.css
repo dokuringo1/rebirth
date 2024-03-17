@@ -29,7 +29,7 @@ body {
 	font-family: "Hiragino maru Gothic ProN W4", "Hiragino Kaku Gothic Pro", "Hiragino Sans", "arial", "Meiryo", "MS PGothic", sans-serif !important;
 	word-wrap: break-word;
 	height: 100%;
-	line-height: 2.2;
+line-height: normal;
 }
 
 
