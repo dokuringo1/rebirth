@@ -3136,7 +3136,7 @@ float: left;
 /* SNSアイコンの位置 */
 .wp-sns li a i::before {
   position: relative;
-  top: 3px;
+  top: 8px;
 }
 
 /* 767px（iPad）以下 */
