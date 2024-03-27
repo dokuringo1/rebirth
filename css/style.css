@@ -331,13 +331,13 @@ font-size: 20px;
     letter-spacing: 0.1em;
     font-weight: bold;
     clear: both;
-    margin-right: 30px;
+
     margin-bottom: 20px;
-    margin-left: 30px;
+
 }
 
 .content p {
-margin: 0 40px 0 25px;
+    margin: 0 10px 0 0px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.8;
@@ -863,8 +863,7 @@ font-size: 11px;
     border: solid 1px #AA9062;
     line-height: 1.5;
     vertical-align: middle;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
+    background: #fff;
 
 
 }
@@ -2477,8 +2476,7 @@ dl.faq dd::before{
 .works_list li {
 	display: block;
 	float: left;
-
-	padding: 20px;
+	padding: 5px;
 
 }
 
@@ -2487,7 +2485,7 @@ dl.faq dd::before{
     text-decoration: none;
     width: 100%;
     border: 1px solid #cdcdcd;
-    position: relative;
+
 }
 
 
@@ -2960,7 +2958,7 @@ font-size: 12px;
   align-items: center;
   background: #fff;
   border: 2px dashed #eee;
-    margin: 20px;
+
 }
 /* カードの右・左共通 */
 .wp-left, .wp-right {
@@ -3162,7 +3160,7 @@ float: left;
 
 h6 {
     position: relative;
-    margin: 30px 20px 30px 20px;
+    margin: 20px 0px 20px 5px;
     padding: 20px;
     border-bottom: 1px solid #533536;
     font-size: 16px;
@@ -3413,7 +3411,7 @@ h8 {
 .child-contents {
     width: 100%;
     text-align: left;
-    margin: 0px;
+    margin: 0px 0 0 10px;
 }
 
 .child-contentsp {
@@ -3685,9 +3683,42 @@ input[name="tab_switch"] {
 
     margin: 20px;
 }
-}
+
 .flex-item {
 
   padding: 10px;
 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.pagetop {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  width:60px;
+  height:60px;
+  z-index:9999;
+  border-radius:50%;
+  background:#333;
+  transform: translateY(100px);
+  transition: transform 0.5s;
+  &.js-active {
+    transform: translateY(0);
+  }
+  &::before {
+    content:"";
+    display:block;
+    width:20px;
+    height:20px;
+    margin-top:5px;
+    border-top:2px solid #fff;
+    border-right:2px solid #fff;
+    transform: rotate(-45deg);
+  }
 }
