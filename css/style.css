@@ -1779,7 +1779,6 @@ header.txt_w.fixed .menu_btn span {
 メニューシャドウ
 -------------------------------------------*/
 .bg_bl {
-	background-color: #FFF;
 	height: 100%;
 	width: 100%;
 	opacity: 0.80;
