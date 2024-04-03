@@ -1359,7 +1359,12 @@ font-size: 13px;
 @media screen and (min-width:960px){
 body {
 	font-size: 16px;
+
 }
+
+
+
+
 
 /*
 ヘッダー
@@ -2882,14 +2887,14 @@ font-size: 12px;
 }
 .balloon_r .says:after {
   right: -26px;
-  border-left: 22px solid #dddadc;
+  border-left: 22px solid #ccc;
 }
 /*吹き出し*/
 
 /*吹き出し・つよみん*/
 .t-balloon_l,
 .t-balloon_r{
-    margin: 0 30px 10px 30px;
+
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -2902,7 +2907,7 @@ font-size: 12px;
   height: auto;
 }
 .t-balloon_r .faceicon{
-  margin-left:25px;
+  margin-left:5px;
 }
 .t-balloon_l .faceicon{
   margin-right:15px;
@@ -2911,27 +2916,26 @@ font-size: 12px;
   order:2 !important;
 }
 .t-says {
-    max-width: 800px;
-    display: flex;
+    width: 900px;
     flex-wrap: wrap;
     position: relative;
     border-radius: 12px;
-    background: #f977bc;
-    color: #fff;
+    background: #ffffff;
+    color: #000;
     box-sizing: border-box;
     margin: 0 !important;
     line-height: 1.5;
     font-size: 14px;
     letter-spacing: 0.3px;
     padding: 15px;
+    border: solid 1px #ccc ;
 }
 .t-says2 {
-    max-width: 800px;
-    display: flex;
+    width: 900px;
     flex-wrap: wrap;
     position: relative;
     border-radius: 12px;
-    background: #6a1e1e;
+    background: #9f9393;
     color: #fff;
     box-sizing: border-box;
     margin: 0 !important;
@@ -3737,3 +3741,8 @@ html {
     transform: rotate(-45deg);
   }
 }
+
+
+
+
+
