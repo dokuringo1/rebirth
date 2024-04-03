@@ -3427,6 +3427,17 @@ h8 {
     border-width: thin;
 }
 
+.child4 {
+
+   display:flex;
+    text-align: center;
+}
+
+.child5 {
+   display:flex;
+    text-align: left;
+}
+
 .child-contents {
     width: 100%;
     text-align: left;
@@ -3611,6 +3622,13 @@ input[name="tab_switch"] {
 }
 
 @media screen and (max-width: 750px){
+
+.child5 {
+    width: 25%;
+   display:flex;
+    text-align: left;
+}
+
 .c-sideheading{
     font-size: 12px;
     line-height: 1.5rem;
