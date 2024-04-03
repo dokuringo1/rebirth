@@ -3629,6 +3629,12 @@ input[name="tab_switch"] {
     text-align: left;
 }
 
+.child4 {
+width: 50%;
+   display:flex;
+    text-align: center;
+}
+
 .c-sideheading{
     font-size: 12px;
     line-height: 1.5rem;
@@ -3762,5 +3768,42 @@ html {
 
 
 
+.box {
+    display: flex;
+    flex-wrap: wrap;
 
+    margin: 0 auto;
+
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    max-width: 1280px;
+
+}
+.box-item {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 25%;
+}
+.box-item-thum {
+    width: 100%;
+}
+.box-item-thum img {
+    width: 100%;
+}
+.box-item-title {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .box-item {
+    width: 50%;
+  } 
+
+  .box-item-title {
+    font-size: 14px;
+  }
+}
 
