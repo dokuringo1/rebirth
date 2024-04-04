@@ -1576,6 +1576,10 @@ header.txt_w.fixed #g_navi li a {
 	background-image: url(../img/topthumbnail/sub_top_tuyomin.jpg);
 }
 
+#sub_top.mahou {
+	background-image: url(../img/topthumbnail/sub_top_mahou.jpg);
+}
+
 #sub_top.ikusei {
 	background-image: url(../img/topthumbnail/sub_top_ikusei.jpg);
 }
@@ -1940,6 +1944,10 @@ header #info {
 
 #sub_top.tuyomin {
 	background-image: url(../img/topthumbnail/sub_top_tuyomin.jpg);
+}
+
+#sub_top.mahou {
+	background-image: url(../img/topthumbnail/sub_top_mahou.jpg);
 }
 
 #sub_top.ikusei {
