@@ -1,0 +1,3 @@
+ErrorDocument 404 https://rebirth-rs.com/
+ErrorDocument 404 /404.html
+Redirect permanent / https://rebirth-rs.com/
