@@ -174,24 +174,24 @@ header h1 a img {
 }
 
 #sub_top {
-	background-color: #555;
-	background-repeat: no-repeat;
-	background-position: top;
-	background-attachment: fixed;
-	height: 340px;
-	line-height: 30px;
-	padding-top: 180px;
-	width: 100%;
-	background-size: 100%;
-	text-align: center;
-	font-weight: bold;
-	color: #FFF;
-	font-size: 34px;
-	letter-spacing: 0.1em;
-	-moz-text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-	-webkit-text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-	-ms-text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    height: 400px;
+    line-height: 30px;
+padding-top: 180px;
+    /* width: 100%; */
+    /* background-size: 100%; */
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 34px;
+    letter-spacing: 0.1em;
+    -moz-text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    -webkit-text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    -ms-text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 #index_top {
@@ -1470,7 +1470,7 @@ header.txt_w.fixed #g_navi li a {
 
 
 /*
-ヘッダー
+sub_top850
 -------------------------------------------*/
 
 #index_top {
@@ -1826,6 +1826,9 @@ header #info {
 	display: none;
 }
 
+/*
+sub_top.PC
+-------------------------------------------*/
 
 #sub_top.sample {
 	background-image: url(../img/sub_top_sample_sp.jpg);
@@ -1848,7 +1851,6 @@ header #info {
 #sub_top.about {
 	background-image: url(../img/sub_top_about_sp.jpg);
 }
-
 
 #sub_top.butukaru1 {
 	background-image: url(../img/topthumbnail/sub_top_butukaru1.jpg);
@@ -1923,43 +1925,42 @@ header #info {
 }
 
 #sub_top.derin {
-	background-image: url(../img/topthumbnail/sub_top_derin.jpg);
+	background-image: url(../img/topthumbnail/sub_top_derin_sp.jpg);
 }
 
 #sub_top.yaty {
-	background-image: url(../img/topthumbnail/sub_top_yaty.jpg);
+	background-image: url(../img/topthumbnail/sub_top_yaty_sp.jpg);
 }
 #sub_top.guild {
-	background-image: url(../img/topthumbnail/sub_top_guild.jpg);
+	background-image: url(../img/topthumbnail/sub_top_guild_sp.jpg);
 }
 
 #sub_top.creature {
-	background-image: url(../img/topthumbnail/sub_top_creature.jpg);
+	background-image: url(../img/topthumbnail/sub_top_creature_sp.jpg);
 }
 
 #sub_top.kaihou {
-	background-image: url(../img/topthumbnail/sub_top_kaihou.jpg);
+	background-image: url(../img/topthumbnail/sub_top_kaihou_sp.jpg);
 }
 
-
 #sub_top.tuyomin {
-	background-image: url(../img/topthumbnail/sub_top_tuyomin.jpg);
+	background-image: url(../img/topthumbnail/sub_top_tuyomin_sp.jpg);
 }
 
 #sub_top.mahou {
-	background-image: url(../img/topthumbnail/sub_top_mahou.jpg);
+	background-image: url(../img/topthumbnail/sub_top_mahou_sp.jpg);
 }
 
 #sub_top.ikusei {
-	background-image: url(../img/topthumbnail/sub_top_ikusei.jpg);
+	background-image: url(../img/topthumbnail/sub_top_ikusei_sp.jpg);
 }
 
 #sub_top.jujin {
-	background-image: url(../img/topthumbnail/sub_top_jujin.jpg);
+	background-image: url(../img/topthumbnail/sub_top_jujin_sp.jpg);
 }
 
 #sub_top.arukemi {
-	background-image: url(../img/topthumbnail/sub_top_arukemi.jpg);
+	background-image: url(../img/topthumbnail/sub_top_arukemi_sp.jpg);
 }
 
 /*
@@ -2140,9 +2141,11 @@ SNSボタン
 	color: #000;
 }
 
+/*
+640px
+-------------------------------------------*/
 
 @media screen and (max-width:640px){
-
 
 
 .h_sns {
@@ -2201,8 +2204,9 @@ SNSボタン
 }
 
 #sub_top {
-	height: 180px;
-	padding-top: 100px;
+    height: 200px;
+    padding-top: 100px;
+    background-size: 100%;
 }
 
 
@@ -2266,8 +2270,11 @@ SNSボタン
 }
 }
 
-@media screen and (max-width:460px){
 
+
+
+
+@media screen and (max-width:460px){
 
 
 input,
