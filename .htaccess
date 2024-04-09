@@ -13,3 +13,4 @@ function is404_redirect()
 }
 add_action('template_redirect', 'is404_redirect');
 ?>
+
