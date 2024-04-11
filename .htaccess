@@ -1,9 +1,15 @@
+ErrorDocument 404 https://rebirth-rs.com/
 ErrorDocument 404 /404.html
-
+Redirect permanent / https://rebirth-rs.com/
 RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} ^(.*).html$ [NC]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ https://rebirth-rs.com/ [R=301,L]
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ https://rebirth-rs.com/ [R=301,L]
+RewriteRule ^aaa.html$ /bbb.html [R=301,L]
+<?php
+function is404_redirect()
+{
+  if (is_404()) {
+    wp_safe_redirect(home_url('/'));
+    exit();
+  }
+}
+add_action('template_redirect', 'is404_redirect');
+?>
