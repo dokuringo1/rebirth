@@ -2,7 +2,8 @@ ErrorDocument 404 https://rebirth-rs.com/
 
 Redirect permanent / https://rebirth-rs.com/
 RewriteEngine on
-RewriteRule ^aaa.html$ /bbb.html [R=301,L]
+RewriteRule ^404.html/$ https://rebirth-rs.com/[L,R=301]
+
 <?php
 function is404_redirect()
 {
