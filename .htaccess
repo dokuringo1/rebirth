@@ -13,3 +13,16 @@ function is404_redirect()
 }
 add_action('template_redirect', 'is404_redirect');
 ?>
+<Files ~ "\.(htaccess|htpasswd)$">
+
+deny from all
+
+</Files>
+
+ 
+
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} ^.*/index.html
+
+RewriteRule ^(.*)index.html$ https://rebirth-rs.com//$1 [R=301,L]
