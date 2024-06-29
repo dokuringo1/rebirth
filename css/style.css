@@ -2291,8 +2291,7 @@ textarea {
 .content table.table_02 th,
 .content table.table_02 td {
 	width: 100% !important;
-
-display: block;
+	display: block;
 
 }
 
@@ -3371,16 +3370,33 @@ h6:before {
 
 
 .my-stx-high {
-font-size: 11px !important;
-    font-weight: 400 !important;
-    /* line-height: 26px !important; */
-    text-shadow: -1px -1px 0px rgba(0,0,0,.44), 1px -1px 0px rgba(0,0,0,.44), -1px 1px 0px rgba(0,0,0,.44), 1px 1px 0px rgba(0,0,0,.44);
-    font-family: Meiryo !important;
+    align-items: center;
+    background-color: #1671b1;
     color: #fff;
-    border-bottom: 1px solid #3c0201;
-    background: #a32e2b;
-    padding: 10px!important;
-    letter-spacing: 1px;
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+    line-height: 1.5;
+    margin-bottom: 0 !important;
+    padding: .5em;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.my-stx-high-r {
+    align-items: center;
+    background-color: #a0162a;
+    color: #fff;
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+    line-height: 1.5;
+    margin-bottom: 0 !important;
+    padding: .5em;
+    position: relative;
+    text-align: center;
+    z-index: 1;
 }
 
 .blue-p {
