@@ -1092,6 +1092,23 @@ font-size: 13px;
 }
 /*　-------次-------　*/
 
+.content table.table_08 {
+    border: solid 1px #AA9062;
+}
+.content table.table_08 td {
+    border: solid 1px #AA9062;
+    font-size: 13px;
+    border: solid 1px #AA9062;
+    background: #fff;
+    padding: 10px;
+}
+.content table.table_08 th {
+    border: solid 1px #AA9062;
+    font-size: 13px;
+    border: solid 1px #AA9062;
+    background: #fff;
+    padding: 10px;
+}
 
 /*
 トップ下部ピックアップ
