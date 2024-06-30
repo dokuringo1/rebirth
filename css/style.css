@@ -723,59 +723,19 @@ footer .box_pr {
 }
 
 
-.content table.table_02 {
-    width: 96%;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-left: auto;
-    font-family: "Noto Sans JP", Sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 1.3px;
-}
+
 .content table.table_02 th,
 .content table.table_02 td {
-	border-bottom-width: 1px;
-	border-bottom-color: #888;
-	padding: 10px;
-	vertical-align: top;
-
+        background-color: #FFF;
+        padding: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.9;
+        vertical-align: top;
 }
+
 .content table.table_02 th {
-	font-size: 16px;
-	white-space: nowrap;
-	font-weight: normal;
-	letter-spacing: 1px;
-	width: 33%;
-	background: #fff;
-
-}
-.content table.table_02 td {
-ine-height: 1.3;
-    background-color: #FFF;
-    letter-spacing: 0.3px;
-}
-
-
-
-.table_02 caption {
-	font-size: 14px;
-	line-height: 30px;
-	background-color: #E5E5E5;
-	color: #111;
-	letter-spacing: 1px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border: 1px solid #FFF;
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
-}
-.table_02 th span {
-	font-size: 12px;
-	color: #CCC;
+	width: 40%;
 }
 
 
@@ -2274,49 +2234,7 @@ SNSボタン
 
 
 
-@media screen and (max-width:460px){
 
-
-input,
-textarea {
-	max-width: 300px !important;
-}
-
-.content table.table_01 th,
-.content table.table_01 td {
-
-
-}
-
-.content table.table_02 th,
-.content table.table_02 td {
-	width: 100% !important;
-	display: block;
-
-}
-
-.content table.table_01 th {
-	background-color: #F6F6F6;
-}
-
-
-#index_top #top_catch h2 {
-	font-size: 30px;
-}
-
-#sub_top {
-	font-size: 24px;
-}
-
-.content h2 {
-	font-size: 24px;
-}
-
-.content .obi_001 h2 {
-	font-size: 22px;
-}
-
-}
 
 /*
 エフェクト
@@ -2608,33 +2526,11 @@ Facebook
 
 
 
-@media screen and (max-width:960px) {
 
 
 
-.content .cont_wrap .box_left {
-	width: 100%;
-	float: none;
-}
-.content .cont_wrap .box_right {
-	width: 100%;
-	float: none;
-	overflow: hidden;
-}
 
-.content .cont_wrap .box_right .fb-page {
-	width: 100% !important;
-}
 
-.works_list li {
-	width: 33.33%;
-}
-
-.g_list li {
-	width: 33.33%;
-}
-
-}
 
 /*
 ページャー
@@ -2687,7 +2583,49 @@ Facebook
 	background-color: #F9F9F9;
 }
 
+/*
+◼️◼️◼️◼️◼️460px◼️◼️◼️◼️◼️
+-------------------------------------------*/
+
+
+@media screen and (max-width:460px){
+
+
+
+input,
+textarea {
+	max-width: 300px !important;
+}
+
+.content table.table_01 th {
+	background-color: #F6F6F6;
+}
+
+
+#index_top #top_catch h2 {
+	font-size: 30px;
+}
+
+#sub_top {
+	font-size: 24px;
+}
+
+.content h2 {
+	font-size: 24px;
+}
+
+.content .obi_001 h2 {
+	font-size: 22px;
+}
+}
+
+/*
+◼️◼️◼️◼️◼️767px◼️◼️◼️◼️◼️
+-------------------------------------------*/
+
+
 @media only screen and (max-width: 767px){
+
 .pager {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -2749,6 +2687,46 @@ dl.faq dt {
 
 dl.faq dd {
 	width: 90%;
+}
+}
+
+/*
+◼️◼️◼️◼️◼️960px◼️◼️◼️◼️◼️
+-------------------------------------------*/
+
+@media screen and (max-width:960px) {
+
+.content table.table_02 th,
+.content table.table_02 td {
+        width: 100%;
+        display: block;
+        background-color: #FFF;
+        padding: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.9;
+}
+
+.content .cont_wrap .box_left {
+	width: 100%;
+	float: none;
+}
+.content .cont_wrap .box_right {
+	width: 100%;
+	float: none;
+	overflow: hidden;
+}
+
+.content .cont_wrap .box_right .fb-page {
+	width: 100% !important;
+}
+
+.works_list li {
+	width: 33.33%;
+}
+
+.g_list li {
+	width: 33.33%;
 }
 
 }
