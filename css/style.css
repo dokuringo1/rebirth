@@ -2714,11 +2714,17 @@ dl.faq dd {
 
 .content table.table_02 th,
 .content table.table_02 td {
+        width: 100%;
         background-color: #FFF;
         padding: 5px;
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 2;
+        font-weight: 600;
+        line-height: 1.9;
+        vertical-align: top;
+        display: block;
+        margin-bottom: 20px;
+        border-bottom-width: 1px;
+        border-bottom-style: dotted;
+        border-bottom-color: #888;
 }
 
 .content .cont_wrap .box_left {
@@ -3367,12 +3373,10 @@ h6:before {
     color: #fff;
     display: flex;
     gap: .5em;
-    justify-content: center;
     line-height: 1.5;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     padding: .5em;
     position: relative;
-    text-align: center;
     z-index: 1;
 }
 
