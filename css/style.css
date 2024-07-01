@@ -1096,8 +1096,7 @@ font-size: 13px;
     border: solid 1px #AA9062;
 }
 .content table.table_08 td {
-    border: solid 1px #AA9062;
-    font-size: 13px;
+    font-size: 11px;
     border: solid 1px #AA9062;
     background: #fff;
     padding: 10px;
@@ -2715,13 +2714,11 @@ dl.faq dd {
 
 .content table.table_02 th,
 .content table.table_02 td {
-        width: 100%;
-        display: block;
         background-color: #FFF;
         padding: 5px;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.9;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 2;
 }
 
 .content .cont_wrap .box_left {
@@ -3372,7 +3369,7 @@ h6:before {
     gap: .5em;
     justify-content: center;
     line-height: 1.5;
-    margin-bottom: 0 !important;
+    margin-bottom:10px;
     padding: .5em;
     position: relative;
     text-align: center;
