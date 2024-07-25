@@ -88,6 +88,10 @@ table td {
 }
 
 /*
+
+
+
+
 ヘッダー
 -------------------------------------------*/
 header {
@@ -1264,6 +1268,19 @@ font-size: 13px;
 	padding-top: 10px;
 }
 
+
+.top_haikei {
+    height: 300px;
+    background-image: url(../img/slide/HP_sum.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /*
 背景入り帯
 -------------------------------------------*/
@@ -1294,15 +1311,18 @@ font-size: 13px;
 }
 
 
+
+
 .obi_002 {
-    width: 100%;
-    height: 300px;
-    background-image: url(../img/slide/HP_sum.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    position: relative;
+	width: 100%;
+	height: auto;
+	background-image: url(../img/obi_002.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0 0 50%;
+	position: relative;
 }
+
 
 .obi_002 .box_in {
 	width: 100%;
@@ -1458,6 +1478,10 @@ sub_top850
         background-position: center top;
     }
 
+#sub_top.home {
+	background-image: url(../img/sub_top_home.jpg);
+}
+
 
 #sub_top.sample {
 	background-image: url(../img/sub_top_sample.jpg);
@@ -1492,6 +1516,10 @@ sub_top850
 #sub_top.derin {
 	background-image: url(../img/topthumbnail/sub_top_derin.jpg);
 }
+
+
+
+
 
 #sub_top.yaty {
 	background-image: url(../img/topthumbnail/sub_top_yaty.jpg);
@@ -1609,6 +1637,8 @@ body {
 body.fixed {
 	overflow: hidden;
 }
+
+
 
 img {
 	max-width: 100% !important;
@@ -1812,6 +1842,8 @@ header #info {
 sub_top.PC
 -------------------------------------------*/
 
+
+
 #sub_top.sample {
 	background-image: url(../img/sub_top_sample_sp.jpg);
 }
@@ -1906,6 +1938,8 @@ sub_top.PC
 	background-image: url(../img/topthumbnail/sub_top_seiki.jpg);
 }
 
+
+
 #sub_top.derin {
 	background-image: url(../img/topthumbnail/sub_top_derin_sp.jpg);
 }
@@ -1997,9 +2031,9 @@ footer .cont_wrap .f_box.lg {
 }
 
 .loop_wrap {
-  display: flex;
-  width: 220%;
-  height: auto;
+display: flex;
+    width: auto;
+    height: auto;
 }
 
 .loop_wrap ul {
@@ -2039,7 +2073,7 @@ footer .cont_wrap .f_box.lg {
 .loop_wrap ul li a img {
     width: 100%;
     display: block;
-    padding: 5px;
+    padding: 1px;
 }
 
 .loop_wrap ul li a span {
@@ -2129,6 +2163,11 @@ SNSボタン
 -------------------------------------------*/
 
 @media screen and (max-width:640px){
+
+#sub_top.home {
+	height: 375px;
+	background-image: url(../img/slide/main_img_02_sp.jpg);
+}
 
 
 .h_sns {
@@ -2613,7 +2652,10 @@ Facebook
 
 @media screen and (max-width:460px){
 
-
+#sub_top.home {
+	height: 375px;
+	background-image: url(../img/slide/main_img_02_sp.jpg);
+}
 
 input,
 textarea {
@@ -2648,7 +2690,10 @@ textarea {
 
 
 @media only screen and (max-width: 767px){
-
+#sub_top.home {
+	height: 375px;
+	background-image: url(../img/slide/main_img_02_sp.jpg);
+}
 .pager {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -2718,6 +2763,11 @@ dl.faq dd {
 -------------------------------------------*/
 
 @media screen and (max-width:960px) {
+
+#sub_top.home {
+	height: 375px;
+	background-image: url(../img/slide/obi_002.jpg);
+}
 
 .content table.table_02 th,
 .content table.table_02 td {
@@ -2796,6 +2846,14 @@ dl.faq dd {
     text-align: left;
     width: 50%;
     font-size: 14px;
+}
+
+.child5 {
+    color: #000;
+    text-align: left;
+width: 12.50%;
+    float: left;
+
 }
 
 
@@ -3642,6 +3700,11 @@ input[name="tab_switch"] {
 		margin-left: 0;
 	}
 
+#sub_top.home {
+	height: 375px;
+	background-image: url(../img/slide/obi_002.jpg);
+}
+
 .c-sideheading{
     font-size: 12px;
     line-height: 1.5rem;
@@ -4017,11 +4080,4 @@ html {
     filter:brightness(1.5);
 }
 
-@media screen and (min-width:960px){
-body {
-	font-size: 16px;
-}
-.sm-slider, .sm-slider::after {
-	top: 100px !important;
-}
-/*
+
