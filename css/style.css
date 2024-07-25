@@ -1973,9 +1973,9 @@ footer .cont_wrap .f_box.lg {
 無限ループ
 -------------------------------------------*/
 .loop_wrap_base {
-    width: 1000px;
+    width: 100%;
     height: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
