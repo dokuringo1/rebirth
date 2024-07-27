@@ -730,11 +730,10 @@ footer .box_pr {
 
 .content table.table_02 th,
 .content table.table_02 td {
+        font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
         background-color: #FFF;
         padding: 5px;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 1.9;
         vertical-align: top;
 }
 
@@ -2771,12 +2770,14 @@ dl.faq dd {
 
 .content table.table_02 th,
 .content table.table_02 td {
-        width: 100%;
+        font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+        width: 48%;
         background-color: #FFF;
-        font-weight: 600;
-        line-height: 2.3;
+        /* font-weight: 600; */
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 0.4px;
         vertical-align: top;
-        display: block;
         border-bottom-width: 1px;
         border-bottom-style: dotted;
         border-bottom-color: #888;
@@ -3549,15 +3550,12 @@ h8 {
 }
 
 .child6 {
-    width: 39%;
-    padding-top: 10px;
-    font-size: 12px;
+width: 39%;
     line-height: 0;
     text-align: center;
     color: #fff;
-
     justify-content: center;
-    align-items: center;
+
 
 }
 
