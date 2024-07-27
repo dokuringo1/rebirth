@@ -2849,6 +2849,14 @@ dl.faq dd {
     line-height: 0;
 }
 
+.child2 {
+    color: #000;
+    text-align: left;
+    width: 50%;
+    font-size: 14px;
+    line-height: 0;
+}
+
 .child5 {
     color: #000;
     text-align: left;
@@ -3539,6 +3547,20 @@ h8 {
    display:flex;
     text-align: left;
 }
+
+.child6 {
+    width: 39%;
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 0;
+    text-align: center;
+    color: #fff;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 .child-contents {
     width: 100%;
