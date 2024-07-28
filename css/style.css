@@ -2775,13 +2775,12 @@ dl.faq dd {
         background-color: #FFF;
         /* font-weight: 600; */
         font-size: 14px;
-        line-height: 1.5;
+        line-height: 1.6;
         letter-spacing: 0.4px;
         float: left;
         vertical-align: top;
-        border-bottom-width: 1px;
-        border-bottom-style: dotted;
-        border-bottom-color: #888;
+        text-align: left;
+
 }
 
 .content .cont_wrap .box_left {
