@@ -731,7 +731,6 @@ footer .box_pr {
 .content table.table_02 th,
 .content table.table_02 td {
         font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-
         background-color: #FFF;
         padding: 5px;
         vertical-align: top;
@@ -2768,15 +2767,17 @@ dl.faq dd {
 	background-image: url(../img/slide/obi_002.jpg);
 }
 
+
 .content table.table_02 th,
 .content table.table_02 td {
         font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-        width: 48%;
+        width: 100%;
         background-color: #FFF;
         /* font-weight: 600; */
         font-size: 14px;
         line-height: 1.5;
         letter-spacing: 0.4px;
+        float: left;
         vertical-align: top;
         border-bottom-width: 1px;
         border-bottom-style: dotted;
@@ -2821,7 +2822,7 @@ dl.faq dd {
 .child {
  float: left;
 }
- 
+
 .child {
     color: #000;
     text-align: left;
@@ -2839,18 +2840,7 @@ dl.faq dd {
 }
 
 .child2 {
- float: left;
-}
- 
-.child2 {
-    color: #000;
-    text-align: left;
-    width: 50%;
-    font-size: 14px;
-    line-height: 0;
-}
-
-.child2 {
+    float: left;
     color: #000;
     text-align: left;
     width: 50%;
@@ -2864,6 +2854,73 @@ dl.faq dd {
     width: 12.50%;
     float: left;
 }
+
+.child6 {
+        width: 100%;
+        float: left;
+}
+
+.child7 {
+    width: 20%;
+    float: left;
+    color: #000;
+    text-align: left;
+    font-size: 14px;
+    line-height: 0;
+}
+
+
+
+
+@media screen and (max-width: 750px){
+
+.child6 {
+        width: 100%;
+        float: left;
+}
+
+.child7 {
+    width: 100%;
+    float: left;
+    line-height: 0;
+}
+
+.child5 {
+    width: 25%;
+   display:flex;
+    text-align: left;
+}
+
+.child4 {
+   width: 50%;
+   display:flex;
+   text-align: center;
+}
+
+.child8 {
+        width: 100%;
+        float: left;
+}
+
+}
+
+
+
+@media screen and (max-width:960px) {
+
+.child6 {
+        width: 100%;
+        float: left;
+}
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -3549,15 +3606,6 @@ h8 {
     text-align: left;
 }
 
-.child6 {
-width: 39%;
-    line-height: 0;
-    text-align: center;
-    color: #fff;
-    justify-content: center;
-
-
-}
 
 
 .child-contents {
@@ -3695,7 +3743,7 @@ input[name="tab_switch"] {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-
+    padding: 5px;
 }
 
 .item-1 {
@@ -3749,18 +3797,6 @@ input[name="tab_switch"] {
 }
 
 @media screen and (max-width: 750px){
-
-.child5 {
-    width: 25%;
-   display:flex;
-    text-align: left;
-}
-
-.child4 {
-width: 50%;
-   display:flex;
-    text-align: center;
-}
 
 .c-sideheading{
     font-size: 12px;
