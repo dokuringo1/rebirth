@@ -729,11 +729,11 @@ footer .box_pr {
 
 .content table.table_02 th,
 .content table.table_02 td {
-        font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+        font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
         background-color: #FFF;
         padding: 5px;
         vertical-align: top;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .content table.table_02 th {
