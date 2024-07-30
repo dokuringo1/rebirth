@@ -24,12 +24,11 @@ html {
 }
 
 body {
+        font-size: 16px;
 	color: #111;
 	background-color: #F6F6F6;
-	font-family: "Hiragino maru Gothic ProN W4", "Hiragino Kaku Gothic Pro", "Hiragino Sans", "arial", "Meiryo", "MS PGothic", sans-serif !important;
-	word-wrap: break-word;
-	height: 100%;
-line-height: normal;
+       font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+        font-weight: 700;
 }
 
 
@@ -734,6 +733,7 @@ footer .box_pr {
         background-color: #FFF;
         padding: 5px;
         vertical-align: top;
+    font-weight: 500;
 }
 
 .content table.table_02 th {
