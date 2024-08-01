@@ -27,7 +27,7 @@ body {
         font-size: 16px;
 	color: #111;
 	background-color: #F6F6F6;
-       font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+	font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
         font-weight: 700;
 }
 
@@ -340,11 +340,13 @@ font-size: 20px;
 }
 
 .content p {
-    margin: 0 10px 0 0px;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    width: 100%;
+    font-weight: 500;
     font-size: 14px;
-    font-weight: 800;
-    line-height: 1.8;
-    letter-spacing: 0.5px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px;
 }
 
 .content .ul_news li {
