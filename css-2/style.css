@@ -101,7 +101,7 @@ html.f-small {
 /*リンクテキスト全般の設定
 ---------------------------------------------------------------------------*/
 a {
-	color: #000;		/*文字色*/
+	color: #fff;		/*文字色*/
 	transition: 0.3s;	/*hoverまでにかける時間。0.3秒。*/
 }
 
@@ -243,6 +243,7 @@ a.ddmenu {cursor: default;}
 .small-screen #menubar ul ul {
 	animation: opa1 0.5s 0.1s both;	/*0.1秒待機後、0.5秒かけてフェードイン表示*/
 	overflow: hidden;	/*簡易clearfix*/
+
 }
 
 /*ドロップダウンメニュー一個あたり*/
@@ -259,6 +260,7 @@ a.ddmenu {cursor: default;}
 .small-screen #menubar ul ul li img {
 	width: 60px;
 	margin-right: 0.5rem;
+
 }
 
 
@@ -269,10 +271,11 @@ a.ddmenu {cursor: default;}
 	position: absolute;z-index: 100;
 	width: calc(100% - 2vw);
 	left: 0px;
-	background: #fff;
 	border: 1px solid #999;
 	border-radius: 10px;
 	padding: 1vw;
+	background: #000;	/*背景色。css冒頭で指定しているprimary-colorを読み込みます*/
+	color: #fff;	/*文字色。css冒頭で指定しているprimary-text-colorを読み込みます*/
 }
 
 
@@ -285,7 +288,7 @@ a.ddmenu {cursor: default;}
 	width: 100%;
 	height: 100%;
 	padding-top: 90px;
-	background: #fff;			/*背景色*/
+	    background: #000000;			/*背景色*/
 	animation: animation1 0.2s both;	/*animation1を実行する。0.2sは0.2秒の事。*/
 }
 
@@ -317,7 +320,7 @@ a.ddmenu {cursor: default;}
 	display: flex;					/*flexボックスを使う指定*/
 	flex-direction: column;			/*子要素（３本バー）部分。flexはデフォルトで横並びになるので、それを縦並びに変更。*/
 	justify-content: space-between;	/*並びかたの種類の指定*/
-	background: var(--primary-color);	/*背景色。css冒頭で指定しているprimary-colorを読み込みます*/
+	    background: rgba(154, 0, 0, 1);	/*背景色。css冒頭で指定しているprimary-colorを読み込みます*/
 }
 
 /*バー１本あたりの設定*/
@@ -414,8 +417,8 @@ a.ddmenu {cursor: default;}
 /*選択中の設定*/
 #f-size li#f-large.current::before,
 #f-size li#f-small.current::before {
-	background: var(--primary-color);	/*背景色。css冒頭で指定しているprimary-colorを読み込みます*/
-	color: var(--primary-text-color);	/*文字色。css冒頭で指定しているprimary-text-colorを読み込みます*/
+	background: #000;	/*背景色。css冒頭で指定しているprimary-colorを読み込みます*/
+	color: #fff;	/*文字色。css冒頭で指定しているprimary-text-colorを読み込みます*/
 }
 
 /*マウスオン時にリンクテキストと同じような手のマークが出るように*/
@@ -562,7 +565,7 @@ main p {
 .sub-contents h3 + nav .submenu {
 border: 1px solid #3c0201;
     background-image: linear-gradient(to left, #744010, #c37c2b, #744010);
-    height: 582px;
+
 }
 
 
