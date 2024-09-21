@@ -250,9 +250,9 @@ a.ddmenu {cursor: default;}
 .large-screen #menubar ul ul li,
 .small-screen #menubar ul ul li {
 	display: flex;
-	align-items: center;
-	float: left;		/*左に回り込みます*/
-	margin-left: 2rem;	/*左に空けるスペース。メニュー間のスペースです。*/
+/*	align-items: center;
+	float: left;		
+	margin-left: 2rem;	*/
 }
 
 /*ドロップダウン内のサムネイル画像*/
@@ -476,7 +476,7 @@ main p {
 /*2カラム
 ---------------------------------------------------------------------------*/
 .main-contents {
-	margin-bottom: 50px;	/*ボックスの下に空けるスペース。subとの間の余白です。*/
+	margin-bottom: 10px;	/*ボックスの下に空けるスペース。subとの間の余白です。*/
 }
 
 	/*画面幅900px以上の追加指定*/
@@ -1012,7 +1012,7 @@ padding: 15px;
 
 /*画像を囲むブロック*/
 .mainimg-slick {
-	margin-bottom: 10px;	/*画像の下に空けるスペース*/
+
 }
 
 /*丸いページナビボタン全体を囲むブロック*/
