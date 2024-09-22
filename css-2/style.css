@@ -445,7 +445,7 @@ main {
     flex: 1;
     padding-bottom: 30px;
     position: relative;
-    bottom: -20px;
+    bottom: -10px;
 }
 
 /*h2(見出し)要素*/
@@ -715,9 +715,9 @@ ul.icons li {
 /*listブロック全体を囲むブロック*/
 .list-grid1,.list-grid2 {
 	display: grid;
-    background: #f8f4e1;
+        background: #f8f4e1;
         border: 1px solid #3c0201;
-       padding: 5px;
+        padding: 5px;
 }
 
 /*マウスオン*/
@@ -778,11 +778,11 @@ ul.icons li {
 ---------------------------------------------------------------------------*/
 
 	/*画面幅500px以上の追加指定*/
-	@media screen and (min-width:500px) {
+	@media screen and (min-width:300px) {
 
 	/*listブロック全体を囲むブロック*/
 	.list-grid1 {
-		grid-template-columns: repeat(2, 1fr);	/*2列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
+		grid-template-columns: repeat(2, 1fr);
 		gap: 5px;	/*ブロックの間に空けるマージン的な指定*/
 	}
 
@@ -794,7 +794,7 @@ ul.icons li {
 
 	/*listブロック全体を囲むブロック*/
 	.list-grid1 {
-		grid-template-columns: repeat(3, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
+		grid-template-columns: repeat(2, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
 		gap: 5px;	/*ブロックの間に空けるマージン的な指定*/
 	}
 
@@ -808,6 +808,7 @@ ul.icons li {
     grid-template-rows: auto 1fr;	/*１つ目（この場合はfigure要素のサイズ）は自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
     border: solid 1px #000;
+
 }
 
 /*ボックス内のfigure画像*/
@@ -824,6 +825,7 @@ ul.icons li {
 
 	/*listブロック全体を囲むブロック*/
 	.list-grid2 {
+
 		grid-template-columns: repeat(2, 1fr);	/*2列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
 		gap: 5px;	/*ブロックの間に空けるマージン的な指定*/
 	}
