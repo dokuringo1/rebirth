@@ -22,7 +22,7 @@ $('.thumbnail-slide').slick({
     {
     breakpoint: 899,	//ブレイクポイント
     settings: {
-    slidesToShow: 2,	//画面内に表示させる数。2枚。
+    slidesToShow: 4,	//画面内に表示させる数。2枚。
     }
     }
     ]
