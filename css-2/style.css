@@ -101,21 +101,26 @@ html.f-small {
 /*リンクテキスト全般の設定
 ---------------------------------------------------------------------------*/
 a {
-	color: #fff;		/*文字色*/
+	color: #000;		/*文字色*/
 	transition: 0.3s;	/*hoverまでにかける時間。0.3秒。*/
 }
 
 /*マウスオン時*/
 a:hover {
-	color: var(--primary-color);	/*css冒頭で指定しているprimary-colorを読み込みます*/
+	color: #630606;	/*css冒頭で指定しているprimary-colorを読み込みます*/
+	border-bottom-color: transparent;
+	transform: translateY(0.1875em);
+	transition: letter-spacing 0.3s;
 }
+
+
 
 
 /*コンテナー（サイト全体を囲むブロック）
 ---------------------------------------------------------------------------*/
 #container {
 
-	max-width: 1100px;				/*最大幅。これ以上広がりません。*/
+	max-width: 1200px;				/*最大幅。これ以上広がりません。*/
 	padding: 0 3vw;					/*上下、左右へのコンテナー内の余白。100vwが画面幅100%の事。*/
 	display: flex;					/*flexを使う指定*/
 	flex-direction: column;			/*子要素を縦並びにする*/
@@ -195,6 +200,7 @@ a.ddmenu {cursor: default;}
 #menubar a {
 	display: block;text-decoration: none;
 	padding: 5px;	/*上下、左右へのメニュー内の余白*/
+	color: #9d9d9d;
 }
 
 
@@ -270,15 +276,21 @@ a.ddmenu {cursor: default;}
 /*ドロップダウンメニューブロック全体*/
 .large-screen #menubar ul ul {
 	position: absolute;z-index: 100;
-	width: calc(100% - 2vw);
-	left: 0px;
+
+	width:800px;
+	width: calc(80% - 2vw);
+	left: 300px;
+	font-size:14px;
 	border: 1px solid #999;
 	border-radius: 10px;
 	padding: 1vw;
-	background: #000;	/*背景色。css冒頭で指定しているprimary-colorを読み込みます*/
-	color: #fff;	/*文字色。css冒頭で指定しているprimary-text-colorを読み込みます*/
+	background: #fff;	/*背景色。css冒頭で指定しているprimary-colorを読み込みます*/
+	color: #000;	/*文字色。css冒頭で指定しているprimary-text-colorを読み込みます*/
 }
 
+large-screen a {
+	color: #000;
+}
 
 /*小さな端末用の開閉ブロック
 ---------------------------------------------------------------------------*/
@@ -289,21 +301,20 @@ a.ddmenu {cursor: default;}
 	width: 100%;
 	height: 100%;
 	padding-top: 90px;
-	    background: #000000;			/*背景色*/
+color: #fff;
+	    background: #000;			/*背景色*/
 	animation: animation1 0.2s both;	/*animation1を実行する。0.2sは0.2秒の事。*/
 }
 
 /*メニュー１個あたりの設定*/
 .small-screen #menubar nav ul li {
-	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
 	margin: 5px;			/*メニューの外側に空けるスペース*/
-	border-radius: 10px;	/*角を丸くする指定*/
 	/*padding: 0 2rem;		メニュー内の余白。上下、左右へ。*/
 }
 
 /*900px以下でのみ表示させるブロック*/
 #menubar .sh {
-	padding: 1rem 2rem 2rem;	/*上、左右、下へのブロック内の余白*/
+	padding: 10px;	/*上、左右、下へのブロック内の余白*/
 }
 
 
@@ -487,7 +498,7 @@ main p {
 	main.column {
 		display: flex;					/*横並びにする*/
 		justify-content: space-between;	/*並びかたの種類の指定*/
-		gap: 2rem;						/*main-contentsとsub-contentsの間のマージン的な隙間*/
+						/*main-contentsとsub-contentsの間のマージン的な隙間*/
 	}
 	
 	/*main-contentsブロック*/
@@ -504,6 +515,7 @@ main p {
 	
 	/*1つ目のsub-contents*/
 	.sub-contents:nth-child(2) {
+        margin-right: 10px;
 		order: 1;	/*並び順。数字の小さい順番に表示されます。*/
 	}
 	
@@ -539,14 +551,16 @@ main p {
 /*サブメニューブロック全体*/
 .submenu {
 	padding: 0;
+    border: solid 1px #592f00;
 
 }
 
 /*メニュー１個あたり*/
 .submenu a {
 	display: block;text-decoration: none;
-    padding: 0.2rem 1rem;
+    padding: 0px 4px 4px 4px;
 	background-image: linear-gradient(to left, #744010, #c37c2b, #744010);
+    background: #fff;
 }
 
 /*メニュー１個あたり（子メニュー以外）*/
@@ -703,14 +717,25 @@ ul.icons li {
 	display: grid;
     background: #f8f4e1;
         border: 1px solid #3c0201;
-padding: 15px;
+       padding: 5px;
 }
+
+/*マウスオン*/
+.list-grid1 a:hover {
+	color: var(--primary-text-color);	/*文字色。css冒頭で指定しているprimary-text-colorを読み込みます*/
+	opacity: 0.6;	/*透明度。色が70%出た状態。*/
+	transform: translateY(0.1875em);
+	transition: letter-spacing 0.3s;
+
+}
+
+
 
 /*ボックス１個あたり*/
 .list-grid1 .list,.list-grid2 .list {
 	position: relative;
-    display: grid;
-    margin-bottom: 10px;
+
+
 
 }
 
@@ -739,6 +764,8 @@ padding: 15px;
 	margin: 0;
 }
 
+
+
 /*ボックス内のp要素*/
 .list-grid1 .list p,
 .list-grid2 .list p {
@@ -756,7 +783,7 @@ padding: 15px;
 	/*listブロック全体を囲むブロック*/
 	.list-grid1 {
 		grid-template-columns: repeat(2, 1fr);	/*2列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
-		gap: 1rem;	/*ブロックの間に空けるマージン的な指定*/
+		gap: 5px;	/*ブロックの間に空けるマージン的な指定*/
 	}
 
 	}/*追加指定ここまで*/
@@ -768,7 +795,7 @@ padding: 15px;
 	/*listブロック全体を囲むブロック*/
 	.list-grid1 {
 		grid-template-columns: repeat(3, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
-		gap: 1rem;	/*ブロックの間に空けるマージン的な指定*/
+		gap: 5px;	/*ブロックの間に空けるマージン的な指定*/
 	}
 
 	}/*追加指定ここまで*/
@@ -776,7 +803,7 @@ padding: 15px;
 
 /*ボックス１個あたり*/
 .list-grid1 .list {
-	padding: 1rem;			/*ボックス内の余白*/
+	padding: 4px;			/*ボックス内の余白*/
 	background: #fffef0;		/*背景色*/
     grid-template-rows: auto 1fr;	/*１つ目（この場合はfigure要素のサイズ）は自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
@@ -798,7 +825,7 @@ padding: 15px;
 	/*listブロック全体を囲むブロック*/
 	.list-grid2 {
 		grid-template-columns: repeat(2, 1fr);	/*2列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
-		gap: 1rem;	/*ブロックの間に空けるマージン的な指定*/
+		gap: 5px;	/*ブロックの間に空けるマージン的な指定*/
 	}
 
 	}/*追加指定ここまで*/
@@ -1056,13 +1083,13 @@ ul.slick-dots li.slick-active button {
 /*スライドショーを囲むブロック*/
 .thumbnail-slide {
 background: #f8f4e1;
-    padding: 20px 10px;
+    padding: 10px 10px;
     border: 1px solid #3c0201;
 }
 
 /*各アイテム間のマージン*/
 .thumbnail-slide .slick-slide {
-    margin: 0 10px;	/*上下は0、左右へ10px*/
+
 }
 
 
