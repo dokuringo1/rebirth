@@ -56,7 +56,7 @@ body {
 	background: #fff;	/*背景色*/
 	color: #777;			/*文字色*/
 	line-height: 2.2;		/*行間*/
-	border-top: 5px solid var(--primary-color);	/*上の線の幅、線種。最後のvarは、css冒頭で指定しているprimary-colorを読み込む設定。*/
+	border-top: 5px solid rgba(154, 0, 0, 1)
 	animation: opa1 0.5s 0.2s both;	/*0.2秒の間だけ非表示にし、その後0.5秒かけてフェードイン表示*/
 background-image: url(../img/main/mainbg.png);
 }
@@ -510,7 +510,7 @@ main p {
 	
 	/*sub-contentsブロック共通*/
 	.sub-contents {
-		width: 230px;	/*幅*/
+		width: 250px;	/*幅*/
 	}
 	
 	/*1つ目のsub-contents*/
@@ -717,7 +717,7 @@ ul.icons li {
 	display: grid;
         background: #f8f4e1;
         border: 1px solid #3c0201;
-        padding: 5px;
+
 }
 
 /*マウスオン*/
@@ -781,9 +781,15 @@ ul.icons li {
 	@media screen and (min-width:300px) {
 
 	/*listブロック全体を囲むブロック*/
+	.list-grid1 .list {
+		padding: 5px;
+
+	}
+
 	.list-grid1 {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 5px;	/*ブロックの間に空けるマージン的な指定*/
+		grid-template-columns: repeat(3, 1fr);
+
+
 	}
 
 	}/*追加指定ここまで*/
@@ -793,22 +799,26 @@ ul.icons li {
 	@media screen and (min-width:800px) {
 
 	/*listブロック全体を囲むブロック*/
-	.list-grid1 {
-		grid-template-columns: repeat(2, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
-		gap: 5px;	/*ブロックの間に空けるマージン的な指定*/
+		.list-grid1 {
+		grid-template-columns: repeat(3, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
+
 	}
 
 	}/*追加指定ここまで*/
+		.list-grid1 .list {
+
+
+	}
 
 
 /*ボックス１個あたり*/
 .list-grid1 .list {
-	padding: 4px;			/*ボックス内の余白*/
-	background: #fffef0;		/*背景色*/
-    grid-template-rows: auto 1fr;	/*１つ目（この場合はfigure要素のサイズ）は自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
-    border: solid 1px #000;
-line-height: 1px;
+
+		background: #fffef0;		/*背景色*/
+		grid-template-rows: auto 1fr;	/*１つ目（この場合はfigure要素のサイズ）は自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
+		box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
+
+		line-height: 1px;
 }
 
 /*ボックス内のfigure画像*/
