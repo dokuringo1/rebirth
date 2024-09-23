@@ -579,7 +579,7 @@ main p {
 /*h3見出しの下にサブメニューが続く場合にメニューの上の線をなくす*/
 .sub-contents h3 + nav .submenu {
 border: 1px solid #3c0201;
-    background-image: linear-gradient(to left, #744010, #c37c2b, #744010);
+        background: #fff;
 
 }
 
