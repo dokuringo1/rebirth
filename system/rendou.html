@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>連動MAP</title>
+    <title>連動MAP | Re:Birth</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,44 +57,106 @@
             }
         }
         
-         .highlight {
-            background-color: yellow;
-        }
-        
-        .search-input {
-    width: 300px;
-    padding: 5px;
-  }
 
-  		.search-container {
-    	position: fixed; /* 画面に固定する */
-    	top: 10px; /* 画面上からの距離 */
-    	left: 10px; /* 画面左からの距離 */
-    	background-color: white;
-    	padding: 10px;
-    	border-radius: 8px;
-    	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  }
     </style>
+</head>
+
+<!------ stylesheet ---------!>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-240293817-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-240293817-1');
+</script>
+<!-- Google tag (gtag.js) -->
+
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/jquery.fancybox.css">
+
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+<link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+
+<link rel="manifest" href="..//manifest.webmanifest">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" rel="stylesheet">
+
+<!------ stylesheet ---------!>
+
 </head>
 <body>
 
-    <h1>連動MAP一覧</h1>
-		<div class="search-container">
-  		<input type="text" id="searchInput" class="search-input" placeholder="検索ワードを入力">
-  		<button id="searchBtn" onclick="highlight()">検索</button>
-  		<button id="nextBtn" onclick="scrollToNext()">次へ</button>
+<header>
+
+<div class="bg_bl"></div>
+<h1><a href="../index.html"><img src="../img/logo.png" alt="Re:Birth"></a></h1>
+
+<a class="menu_btn">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+</a>
+
+<!------ NAVI --------!>
+<nav id="g_navi">
+    <ul>
+    <li><a href="../index.html">HOME</a></li>
+    <li><a href="../system/creature.html">クリーチャー</a></li>
+    <li><a href="../quest/quest.html">クエスト</a></li>
+    <li><a href="../system/kaihouhenkan.html">解放変換</a></li>
+    <li><a href="../system/yaty_yami.html">闇商人</a></li>
+    <li><a href="../system/karibatekisei.html">適正狩場</a></li>
+    </ul>
+</nav>
+<!------ NAVI --------!>
+
+<!------ SNS ---------!>
+<ul class="h_sns">
+  <li><a href="#" target="_blank"><img src="../img/main/top.png" style="width:25px"></a></li>
+  <li><a href="https://www.redstoneonline.jp/" target="_blank"><img src="../img/red_favicon.png" style="width:25px"></a></li>
+  <li><a href="https://sokomin.github.io/" target="_blank"><img src="../img/sokominlogo.png" style="width:25px"></a></li>
+  <li><a href="https://khbsroom.com/" target="_blank"><img src="../img/khb.jpg" style="width:25px"></a></li>
+</ul>
+<!------ SNS ---------!>
+
+</header>
+
+<div id="sub_top" class="derin"></div>
+
+<div class="pankuzu">
+<ul>
+<li><a href="../index.html"><i class="fas fa-home"></i>HOME</a></li>
+<li><a href="../system/system.html">システム</a></li>
+<li>連動MAP</li>
+</ul>
 </div>
+
+<body>
+
+</div>
+
+<span style="font-size:30px;color:#FF0099;">連動MAP</span>
+
+<p>当初検索機能をつけておりましたがブラウザ機能の検索機能のほうが優秀だったので削除しました！！<br>
+PCから見ている方は<span style="background: linear-gradient(transparent 0%, #66FFCC 0%)">CTRL（キー)+F</span>で検索機能を出せますのでそちらで検索よろしくお願いします。<br>
+スマホから見ている方は画面右上にある<span style="background: linear-gradient(transparent 0%, #66FFCC 0%)">︙</span>から<span style="background: linear-gradient(transparent 0%, #66FFCC 0%)">ページ内検索</span>と進んでいただくと検索できるのでよろしくお願いします！！！<br>
+そしてまだ未完成です(特にウポス以降)。少しずつ追加していくので生暖かく見守りお願いします！</p>
     <table id="groupTable">
         <thead>
-            <tr>
+            <tr bgcolor="#fff2cc">
                 <th>連動</th>
                 <th>街銀行</th>
                 <th>古都周辺</th>
                  <th>狩場(LV899まで)</th>
                   <th>狩場(LV900～)</th>
             </tr>
-            <tr>
+            
+            <tr bgcolor="#4dd0e1">
     <td style="border: solid 1px;">連動1</td>
             <td style="border: solid 1px;">古都</td>
             
@@ -103,7 +165,6 @@
             <td style="border: solid 1px;"></td>
             </tr>
             <tr>
-            
     <td style="border: solid 1px;">連動2</td>
     		<td style="border: solid 1px;">アリアン<br>
             	ラカリフサ<br>
@@ -129,8 +190,7 @@
 				海底神殿Ｂ２(ミラー３～５)<br>
 				静寂の砂丘 星の谷(ミラー４～６)</td>
             </tr>
-            <tr>
-            
+            <tr bgcolor="#e0f7fa">
     <td style="border: solid 1px;">連動3</td>
     		<td style="border: solid 1px;">ハノブ<br>
             	バリアート<br>
@@ -150,9 +210,9 @@
 				干からびた影の砂漠<br>
 				枯渇した生命の森</td>
             </tr>
-            <tr>
             
-    <td style="border: solid 1px;">連動4</td>
+            <tr>
+            <td style="border: solid 1px;">連動4</td>
 		    <td style="border: solid 1px;">アウグスタ<br>
 				ブリッジヘッド</td>
             
@@ -167,9 +227,9 @@
             <td style="border: solid 1px;"> </td>
             
             </tr>
-            <tr>
-    
-    <td style="border: solid 1px;">連動5</td>
+            
+            <tr bgcolor="#e0f7fa">
+  		<td style="border: solid 1px;">連動5</td>
    		    <td style="border: solid 1px;">スマグ<br>
             	ギルドホール</td>
             
@@ -179,9 +239,9 @@
             <td style="border: solid 1px;"> </td>
             <td style="border: solid 1px;"></td>
             </tr>
-            <tr>
             
-    <td style="border: solid 1px;">連動6</td>
+            <tr>
+		<td style="border: solid 1px;">連動6</td>
    		    <td style="border: solid 1px;">リンケン<br>
 				アリアン銀行<br>
 				アウグスタ銀行</td>
@@ -196,9 +256,9 @@
 				ヤティカヌ 日の出森林(ミラー4～5)<br>
 				ヤティカヌ 星降る森林(ミラー4～5)</td>
             </tr>
-            <tr>
             
-    <td style="border: solid 1px;">連動7</td>
+             <tr bgcolor="#e0f7fa">
+ 		 <td style="border: solid 1px;">連動7</td>
     		<td style="border: solid 1px;">ビガプール<br>
 				シュトラセラト<br>
 				ダメル<br>
@@ -220,9 +280,9 @@
 				ヤティカヌ 夜影の森林(ミラー１～３)<br>
 				ヤティカヌ 暁の森林(ミラー１～３)</td>
             </tr>
-            <tr>
             
-    <td style="border: solid 1px;">連動8</td>
+            <tr>
+		 <td style="border: solid 1px;">連動8</td>
     		<td style="border: solid 1px;">ボルティッシュ<br>
 				ボルティッシュ銀行</td>
             
@@ -234,9 +294,9 @@
 				海底神殿 Ｂ１(オリジナル、ミラー１～２)<br>
 				海底神殿 Ｂ２(オリジナル、ミラー１～２)</td>
             </tr>
-            <tr>
             
-    <td style="border: solid 1px;">連動9</td>
+             <tr bgcolor="#e0f7fa">
+		<td style="border: solid 1px;">連動9</td>
     		<td style="border: solid 1px;"></td>
             
             <td style="border: solid 1px;">ゼンシの防具店<br>
@@ -252,9 +312,9 @@
             
             <td style="border: solid 1px;"></td>
             </tr>
-            <tr> 
             
-    <td style="border: solid 1px;">連動10</td>
+            <tr> 
+		<td style="border: solid 1px;">連動10</td>
     		<td style="border: solid 1px;">ロングテール</td>
             
             <td style="border: solid 1px;">古都西(中央プラトン街道／ブルンネンシュティグ入口付近)<br>
@@ -277,9 +337,9 @@
 				没落した悪魔の地(全マップ)<br>
 				ウエストスワンプ大空洞</td>
             </tr>
-            <tr>
             
-    <td style="border: solid 1px;">連動11</td>
+             <tr bgcolor="#e0f7fa">
+		<td style="border: solid 1px;">連動11</td>
    		    <td style="border: solid 1px;"></td>
             
             <td style="border: solid 1px;">古都東(東プラトン街道／イースタンブリッジ付近)</td>
@@ -292,15 +352,15 @@
 				荒野の要塞(全マップ) </td>
             
             <td style="border: solid 1px;">古代悪魔研究所(オリジナル、ミラー１～５)<br>
-				ブラックファイヤー　隠されたダンジョン(全マップ)<br>
+				ブラックファイヤー 隠されたダンジョン(全マップ)<br>
 				捨てられた地下墓地Ｂ１(ミラー３～５)<br>
 				捨てられた地下墓地Ｂ２(ミラー１～５)<br>
 				捨てられた地下墓地Ｂ３(ミラー１～５)<br>
 				忘れられた地下収容所Ｂ１(ミラー１～５)<br>
 				忘れられた地下収容所Ｂ２(ミラー１～５)<br>
 				忘れられた地下収容所Ｂ３(ミラー１～５)<br>
-				静寂の砂丘　月の谷(全マップ)<br>
-				静寂の砂丘　星の谷(オリジナル)</td>
+				静寂の砂丘 月の谷(全マップ)<br>
+				静寂の砂丘 星の谷(オリジナル)</td>
             </tr>
             <tr>
             
@@ -323,67 +383,47 @@
             </tr>
             <tr>
         </thead>
-        <tbody>
-            <!-- ここにJavaScriptでJSONデータから行を追加します -->
-        </tbody>
+        
     </table>
 
+<br><br>
+<p>参考サイト<br>
+<a href="https://khbsroom.com/onchouque.html" target="_blank">https://khbsroom.com/</a><br>
+</p>
 
- <script>
-   let currentMatchIndex = 0;
-let matches = [];
+<!------------------------foot------------------------!>
 
-function highlight() {
-    const searchValue = document.getElementById("searchInput").value;
-    if (!searchValue) return;
+<div class="to_top"><a href="#"><i class="fas fa-chevron-up" title="ページトップへ戻る"></i></a></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../js/jquery.inview.min.js"></script>
+<script src="../js/script.js"></script>
 
-    const bodyText = document.body.innerHTML;
-    const regex = new RegExp(`(${searchValue})`, "gi");
-    const highlightedText = bodyText.replace(regex, '<mark>$1</mark>');
-
-    document.body.innerHTML = highlightedText;
-    matches = [...document.querySelectorAll('mark')]; // 全てのマークタグを検索結果とする
-
-    if (matches.length > 0) {
-        currentMatchIndex = 0; // 初期化
-        scrollToNext(); // 最初の結果にスクロール
-    }
-}
-
-function scrollToNext() {
-    if (matches.length === 0) return;
-    
-    currentMatchIndex = (currentMatchIndex + 1) % matches.length;
-    const match = matches[currentMatchIndex];
-
-    window.scrollTo({
-        top: match.index, // 該当する検索結果までスクロール
-        behavior: 'smooth' 
-    });
-
-}
-
-// ページロード後にEnterキーのリスナーを追加
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("searchInput").addEventListener("keydown", function(event) {
-        if (event.key === "Enter") {
-            if (matches.length === 0) {
-                highlight(); // 検索を行う
-            } else {
-                scrollToNext(); // 次の結果にスクロール
-            }
-        }
-    });
-});
-
-function scrollToNext() {
-    if (matches.length === 0) return;
-
-    matches[currentMatchIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
-    currentMatchIndex = (currentMatchIndex + 1) % matches.length; // 次のマッチへ
-}
-
+<script src="https://kit.fontawesome.com/eea364082e.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/jquery.sublimeSlideshow.js"></script>
+<script src="js/jquery.inview.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+$('.works_list li a').matchHeight();
+</script>
+<script src="../js/jquery.fancybox.js"></script>
+<script>
+	$('[data-fancybox]').fancybox();
 </script>
 
+<footer>
+
+<address>
+<p style="font-size: 12px;padding: 10px;">
+当サイトで利用している画像及びデータは、「株式会社モビディック 」（ゲーム提供者）及び「L&amp;K Co., Ltd.」（ゲーム開発者）に帰属します。<br>
+許可無くご利用又は転用する事は出来ませんので、予めご了承下さい。<br></p>
+
+</div>
+
+Copyright (C) Re:Birth. All Rights Reserved
+
+</address>
+
+</footer>
 </body>
 </html>
