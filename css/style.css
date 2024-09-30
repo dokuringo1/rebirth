@@ -3581,13 +3581,13 @@ h8 {
 
 .child3 {
     width: 25%;
-    height: 200px;
+    height: 165px;
     padding-top: 10px;
     font-size: 8px;
     line-height: 16px;
     text-align: center;
-    color: #fff;
-    background: #000;
+    color: #000;
+    background: #fff;
     justify-content: center;
     align-items: center;
     border: solid;
