@@ -1,0 +1,1235 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<title>ミニペット・突然変異 | Re:Birth</title>
+<meta name="Keywords" content="レッドストーン,ミニペット,突然変異一覧,攻略" />
+<meta name="Description" content="ミニペット・突然変異一覧情報" />
+<meta property="og:url" content="https://rs-rebirth.github.io/system/costume.html" />
+<meta property="og:type" content="ミニペット・突然変異一覧" />
+<meta property="og:title" content="ミニペット・突然変異一覧" />
+<meta property="og:description" content="ミニペット・突然変異一覧" />
+<meta property="og:site_name" content="Re:Birth" />
+<meta property="og:image" content="https://rs-rebirth.github.io/img/thumbnail/minipet_sum.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://rs-rebirth.github.io/img/thumbnail/minipet_sum.jpg" />
+
+<!------ stylesheet ---------!>
+
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/jquery.fancybox.css">
+
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+<link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+
+<link rel="manifest" href="..//manifest.webmanifest">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" rel="stylesheet">
+
+<!------ stylesheet ---------!>
+
+</head>
+<body>
+
+<header>
+
+<div class="bg_bl"></div>
+<h1><a href="../index.html"><a href="../img/logo.png" alt="Re:Birth"></a></h1>
+
+<a class="menu_btn">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+</a>
+
+<nav id="g_navi">
+    <ul>
+    <li><a href="../index.html">HOME</a></li>
+    <li><a href="../system/creature.html">クリーチャー</a></li>
+    <li><a href="../quest/quest.html">クエスト</a></li>
+    <li><a href="../system/kaihouhenkan.html">解放変換</a></li>
+    <li><a href="../system/yaty_yami.html">闇商人</a></li>
+    <li><a href="../system/karibatekisei.html">適正狩場</a></li>
+    </ul>
+</nav>
+
+
+
+</header>
+
+
+<br><br><br><br><br><br>
+
+<div class="pankuzu">
+<ul>
+<li><a href="../index.html"><i class="fas fa-home"></i>HOME</a></li>
+<li><a href="../system/system.html">システム</a></li>
+<li>ミニペット・突然変異</li>
+</ul>
+</div>
+
+<div class="content">
+<div class="cont_wrap effect">
+<div class="txt_box">
+
+<p>更新日: <time id="modified_date"></time></p>
+<script>
+/**
+  * ステップ1
+  * ファイルの更新日を取得
+  */
+// HTMLファイルの最終更新日を取得
+const last = new Date(document.lastModified);
+/**
+  * ステップ2
+  * 取得した日付データを「年・月・日」に分けて取得
+  */
+// 取得した日付を「年・月・日」に分けて変数に格納する
+const year = last.getFullYear();
+const month = last.getMonth() + 1;
+const date = last.getDate();
+/**
+  * ステップ3
+  * 「月・日」の値が1桁の場合は先頭に「0」を追加して2桁に修正
+  */
+// 月・日の値を修正した後に格納する変数を用意する
+let fixedMonth = month;
+let fixedDate = date;
+// 月の値が10より小さい場合は先頭に「0」を追加
+if (month < 10) {
+fixedMonth = "0" + month;
+}
+// 日の値が10より小さい場合は先頭に「0」を追加
+if (date < 10) {
+fixedDate = "0" + date;
+}
+/**
+  * ステップ4
+  * 上書き用の日付のテキストを作成
+  */
+// 表示用のテキストを作成 例: 2024年2月8日
+const viewDateText = year + "年" + month + "月" + date + "日";
+// データ用の文字列を作成 例: 2024-02-08
+const datetimeText = year + "-" + fixedMonth + "-" + fixedDate;
+/**
+  * ステップ5
+  * HTMLの要素に値を上書き
+  */
+// 更新日の表示先のHTML要素「time」タグを取得
+const target = document.getElementById('modified_date');
+// timeタグの内容を上書きする 例: 2024年2月8日
+target.textContent = viewDateText;
+// timeタグのdatetime属性を追加する 例: 2024-02-08
+target.setAttribute("datetime", datetimeText);
+</script>
+
+
+
+
+
+<table class="table_01">
+<colgroup><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"></colgroup>
+
+<tbody style="font-size:11px;padding:5px;">
+
+<tr>
+<td style="padding:5px;border:solid 1px;background: #000;color: #fff;text-align:center;"><b>基本</b></td>
+<td style="padding:5px;border:solid 1px;background: #000;color: #fff;text-align:center;"><b>1次進化<br>精霊型</b></td>
+<td style="padding:5px;border:solid 1px;background: #000;color: #fff;text-align:center;"><b>1次進化<br>自然型</b></td>
+<td style="padding:5px;border:solid 1px;background: #000;color: #fff;text-align:center;"><b>1次進化<br>神霊型</b></td>
+<td style="padding:5px;border:solid 1px;background: #be572a;color: #fff;text-align:center;"><b>2次進化<br>精霊型</b></td>
+<td style="padding:5px;border:solid 1px;background: #be572a;color: #fff;text-align:center;"><b>2次進化<br>自然型</b></td>
+<td style="padding:5px;border:solid 1px;background: #be572a;color: #fff;text-align:center;"><b>2次進化<br>神霊型</b></td>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>火の霊</b><br><img src="../img/minipet/minipet1.gif"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>サマランダー</b><br><img src="../img/minipet/minipet2.gif"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>火</b><br><img src="../img/minipet/minipet3.gif"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>ハオリン</b><br><img src="../img/minipet/minipet4.gif"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>精霊型<br>ケルベロス</b><br><img src="../img/minipet/minipet7.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>自然型<br>業火</b><br><img src="../img/minipet/minipet5.gif"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>神霊型<br>ヴァウリ</b><br><img src="../img/minipet/minipet4.gif"style="width:40px;"></td>
+</tr>
+
+
+
+<tr>
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>水の霊</b><br><img src="../img/minipet/minipet8.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>ウンディーネ</b><br><img src="../img/minipet/minipet9.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>水</b><br><img src="../img/minipet/minipet10.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>ミオリン</b><br><img src="../img/minipet/minipet11.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>精霊型<br>セイレーン</b><br><img src="../img/minipet/minipet12.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>自然型<br>爆水</b><br><img src="../img/minipet/minipet13.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>神霊型<br>ムウリ</b><br><img src="../img/minipet/minipet14.jpg"style="width:40px;"></td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>風の霊</b><br><img src="../img/minipet/minipet16.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>シルフィー</b><br><img src="../img/minipet/minipet17.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>風</b><br><img src="../img/minipet/minipet18.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>スオリン</b><br><img src="../img/minipet/minipet19.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>精霊型<br>ハーピー</b><br><img src="../img/minipet/minipet20.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>自然型<br>烈風</b><br><img src="../img/minipet/minipet21.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>神霊型<br>パウリ</b><br><img src="../img/minipet/minipet22.jpg"style="width:40px;"></td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>大地の霊</b><br><img src="../img/minipet/minipet24.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>ノーム</b><br><img src="../img/minipet/minipet25.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>土</b><br><img src="../img/minipet/minipet26.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>ダオリン</b><br><img src="../img/minipet/minipet27.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>精霊型<br>カトブレパス</b><br><img src="../img/minipet/minipet28.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>自然型<br>大地</b><br><img src="../img/minipet/minipet29.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>神霊型<br>ゴウリ</b><br><img src="../img/minipet/minipet30.jpg"style="width:40px;"></td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>光の霊</b><br><img src="../img/minipet/minipet32.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>ウィスプー</b><br><img src="../img/minipet/minipet33.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>光</b><br><img src="../img/minipet/minipet34.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>チャオリン</b><br><img src="../img/minipet/minipet35.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>精霊型<br>ピクシー</b><br><img src="../img/minipet/minipet36.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>自然型<br>雷光</b><br><img src="../img/minipet/minipet37.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>神霊型<br>ヌウリ</b><br><img src="../img/minipet/minipet38.jpg"style="width:40px;"></td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>闇の霊</b><br><img src="../img/minipet/minipet40.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>シャドウ</b><br><img src="../img/minipet/minipet42.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>闇</b><br><img src="../img/minipet/minipet44.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>ゴオリン</b><br><img src="../img/minipet/minipet45.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>精霊型<br>アビス</b><br><img src="../img/minipet/minipet46.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>自然型<br>黒闇</b><br><img src="../img/minipet/minipet47.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>神霊型<br>ダウリ</b><br><img src="../img/minipet/minipet48.jpg"style="width:40px;"></td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>幻の霊</b><br><img src="../img/minipet/minipet48.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>イリュージョン</b><br><img src="../img/minipet/minipet49.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>幻想</b><br><img src="../img/minipet/minipet50.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b><br>ザオリン</b><br><img src="../img/minipet/minipet52.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>精霊型<br>ファントム</b><br><img src="../img/minipet/minipet53.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>自然型<br>幻影</b><br><img src="../img/minipet/minipet54.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>神霊型<br>アウリ</b><br><img src="../img/minipet/minipet55.jpg"style="width:40px;"></td>
+</tr>
+
+</tbody></table>
+
+
+
+<table class="table_01">
+<colgroup><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"></colgroup>
+
+<tbody style="font-size:11px;padding:5px;">
+
+
+
+<td style="padding:5px;border:solid 1px;background: #000;color: #fff;text-align:center;" colspan="8" ><b>突然変異</b></td>
+
+
+<tr>
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b>突然変異<br>陽</b><br><img src="../img/minipet/minipet59.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b>突然変異<br>陰</b><br><img src="../img/minipet/minipet61.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"></td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#ffcaca">
+ <p style="font-size:7px;text-align:center;"><b>突然変異【火】<br>インシネス</b><br><img src="../img/minipet/minipet60.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #c9dbbc;">
+ <p style="font-size:7px;text-align:center;"><b>突然変異【水】<br>タイドナ</b><br>
+ <img src="../img/minipet/minipet15.jpg"style="width:40px;">
+</td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"><b>突然変異【風】<br>エアーター</b><br><img src="../img/minipet/minipet23.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #d7ae8a;">
+ <p style="font-size:7px;text-align:center;"><b>突然変異【大地】<br>トゥロウン</b><br><img src="../img/minipet/minipet31.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #faff9c;">
+ <p style="font-size:7px;text-align:center;"><b>突然変異【光】<br>レディーア</b><br><img src="../img/minipet/minipet39.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #c3c3c3;">
+ <p style="font-size:7px;text-align:center;"><b>突然変異【闇】<br>オキュロス</b><br><img src="../img/minipet/minipet49.jpg"style="width:40px;"></td>
+<td style="padding: 5px;border:solid 1px;background: #fff;">
+</td>
+
+
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#ffcaca">
+ <p style="font-size:7px;text-align:center;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #c9dbbc;">
+ <p style="font-size:7px;text-align:center;"> <a href="../img/minipet/minipetskill2.jpg" data-fancybox="kensi">
+ <img src="../img/minipet/minipetskill2.jpg" style="width:120px;"></a>
+</td>
+
+<td style="padding: 5px;border:solid 1px;background: #ffdda6;">
+ <p style="font-size:7px;text-align:center;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #d7ae8a;">
+ <p style="font-size:7px;text-align:center;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #faff9c;">
+ <p style="font-size:7px;text-align:center;"> <a href="../img/minipet/minipetskill5.jpg" data-fancybox="kensi">
+ <img src="../img/minipet/minipetskill5.jpg" style="width:120px;"></a></td>
+
+<td style="padding: 5px;border:solid 1px;background: #c3c3c3;">
+ <p style="font-size:7px;text-align:center;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"></td>
+
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b>突然変異【幻】<br>クロード</b><br><img src="../img/minipet/minipet58.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><b>突然変異【幻】<br></b>ビスタ<br><img src="../img/minipet/minipet62.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"></td>
+
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"></td>
+</tr>
+
+
+</tbody></table>
+
+
+<table class="table_01">
+
+
+<tbody style="font-size:11px;padding:5px;">
+
+
+
+<td style="padding:5px;border:solid 1px;background: #000;color: #fff;" colspan="8" >
+<b>突然変異の作り方</b><br>
+
+
+
+</p></td>
+
+
+
+
+<tr>
+<td style="padding: 5px;border:solid 1px;">
+ <p style="font-size:7px;text-align:center;"><img src="../img/minipet/minisetumei1.jpeg"></td>
+
+
+</tr>
+<td style="padding: 5px;border:solid 1px;">
+<p style="font-size:12px;">
+※合成された2次進化ミニペットは、素材と生贄に使用したミニペットの有効期限が合計されます。<br>※有効期限のないミニペットも合成可能ですが、約60秒間だけ活性化し、その後は非活性状態になります。<br>
+
+2次進化ミニペットは、「進化させたいミニペット」の属性および進化形態（精霊/自然/神霊）をそのまま引き継ぎます。<br>また、「生贄にするミニペット」が持つスキルの中から、引き継ぎ可能なスキルがランダムで2つ引き継がれます。<br><br>
+
+🔸　ペット合成で突然変異が生まれる確率は約0.1%<br>
+🔸　陰と陽の出現率は等しい<br>
+🔸　光と闇限定を混ぜた時のみ確率0.2%<br>
+🔸　光/闇のシャードからの出現率：12.5%(8回に1匹)<br>
+🔸　変異促進剤は突然変異生成率+10%(1.1倍ではない)<br></p>
+</td>
+
+
+</tbody></table>
+
+
+
+<table class="table_01">
+<tbody style="font-size:11px;padding:5px;">
+<td style="padding:5px;border:solid 1px;background: #000;color: #fff;" colspan="8" >
+<b>ミニペット配列の組み合わせ</b><br>
+</td>
+
+
+
+
+<tr>
+<td style="padding: 5px;border:solid 1px;">
+<p style="font-size:12px;">ミニペット配列の組み合わせとは？<br>
+
+ミニペットを多数保有している場合、ミニペット情報ウィンドウから特定の種類で配列することでボーナスが獲得できます。<br>
+
+ペットの持続時間に関係なく、保有しているだけでボーナスの獲得が可能です。<br>
+
+ボーナスは保有しているすべてのペットに適用されます。<br></p></td>
+
+
+</tr>
+
+
+</tbody></table>
+
+
+<table class="table_01">
+<colgroup><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"></colgroup>
+
+<tbody style="font-size:11px;padding:5px;">
+
+<td style="padding:5px;border:solid 1px;background: #000;color: #fff;" colspan="8" ><b>陰陽融合</b></td>
+<tr><td style="padding:5px;border:solid 1px;background: #fff;color: #000;font-size:10px;text-align:center;"" colspan="2" ><b>効果</b></td><td style="padding:5px;border:solid 1px;background: #fff;color: #000;font-size:10px;" colspan="6" ><b>ペットのスキル発動確率＋100％<br>基本型ペットのスキルレベル＋1<br>ペットのダメージ＋30％</b></td></tr>
+
+<tr>
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>1</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>2</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>3</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>4</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>5</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>6</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>7</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>8</td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>陽</b><br><img src="../img/minipet/minipet59.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>陽</b><br><img src="../img/minipet/minipet59.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陽</b><br><img src="../img/minipet/minipet59.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陽</b><br><img src="../img/minipet/minipet59.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陰</b><br><img src="../img/minipet/minipet61.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陰</b><br><img src="../img/minipet/minipet61.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陰</b><br><img src="../img/minipet/minipet61.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陰</b><br><img src="../img/minipet/minipet61.jpg"style="width:40px;"></td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>9</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>10</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>11</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>12</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>13</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>14</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>15</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>16</td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>全付属</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全付属</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全付属</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全付属</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全付属</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全付属</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全付属</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全付属</b></td>
+</tr>
+
+
+
+</tbody></table>
+
+
+
+<table class="table_01">
+<colgroup><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"></colgroup>
+
+<tbody style="font-size:11px;padding:5px;">
+
+<td style="padding:5px;border:solid 1px;background: #000;color: #fff;" colspan="8" ><b>陰陽調和</b></td>
+<tr><td style="padding:5px;border:solid 1px;background: #fff;color: #000;font-size:10px;text-align:center;"" colspan="2" ><b>効果</b></td><td style="padding:5px;border:solid 1px;background: #fff;color: #000;font-size:10px;" colspan="6" ><b>ペットのスキル発動確率＋150％<br>基本型ペットのスキルレベル＋1<br>ペットのダメージ＋30％<br>ペットのスキルレベル＋1</b></td></tr>
+
+<tr>
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>1</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>2</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>3</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>4</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>5</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>6</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>7</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>8</td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>陽</b><br><img src="../img/minipet/minipet59.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>陽</b><br><img src="../img/minipet/minipet59.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陽</b><br><img src="../img/minipet/minipet59.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陽</b><br><img src="../img/minipet/minipet59.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陰</b><br><img src="../img/minipet/minipet61.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陰</b><br><img src="../img/minipet/minipet61.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陰</b><br><img src="../img/minipet/minipet61.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陰</b><br><img src="../img/minipet/minipet61.jpg"style="width:40px;"></td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>9</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>10</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>11</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>12</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>13</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>14</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>15</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>16</td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>陰</b><br><img src="../img/minipet/minipet61.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陰</b><br><img src="../img/minipet/minipet61.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陰</b><br><img src="../img/minipet/minipet61.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陰</b><br><img src="../img/minipet/minipet61.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陽</b><br><img src="../img/minipet/minipet59.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陽</b><br><img src="../img/minipet/minipet59.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陽</b><br><img src="../img/minipet/minipet59.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>陽</b><br><img src="../img/minipet/minipet59.jpg"style="width:40px;"></td>
+
+</tr>
+
+</tbody></table>
+
+
+
+<table class="table_01">
+<colgroup><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"></colgroup>
+
+<tbody style="font-size:11px;padding:5px;">
+
+<td style="padding:5px;border:solid 1px;background: #000;color: #fff;" colspan="8" ><b>六合聖</b></td>
+<tr><td style="padding:5px;border:solid 1px;background: #fff;color: #000;font-size:10px;text-align:center;"" colspan="2" ><b>効果</b></td><td style="padding:5px;border:solid 1px;background: #fff;color: #000;font-size:10px;" colspan="6" ><b>ペットのスキル発動確率＋150％<br>主の知識に比例した強力なスキルをスキル使用時に5%の確率で使用</b></td></tr>
+
+<tr>
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>1</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>2</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>3</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>4</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>5</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>6</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>7</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>8</td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>インシネス</b><br><img src="../img/minipet/minipet60.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>タイドナ</b><br><img src="../img/minipet/minipet15.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>エアーター</b><br><img src="../img/minipet/minipet23.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>トゥロウン</b><br><img src="../img/minipet/minipet31.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>レディーア</b><br><img src="../img/minipet/minipet39.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>オキュロス</b><br><img src="../img/minipet/minipet49.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>他 突然変異</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>他 突然変異</b></td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>9</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>10</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>11</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>12</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>13</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>14</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>15</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>16</td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>インシネス</b><br><img src="../img/minipet/minipet60.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>タイドナ</b><br><img src="../img/minipet/minipet15.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>エアーター</b><br><img src="../img/minipet/minipet23.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>トゥロウン</b><br><img src="../img/minipet/minipet31.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>レディーア</b><br><img src="../img/minipet/minipet39.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>オキュロス</b><br><img src="../img/minipet/minipet49.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>他 突然変異</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>他 突然変異</b></td>
+</tr>
+
+</tbody></table>
+
+
+
+
+<table class="table_01">
+<colgroup><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"></colgroup>
+
+<tbody style="font-size:11px;padding:5px;">
+
+<td style="padding:5px;border:solid 1px;background: #000;color: #fff;" colspan="8" ><b>六道聖</b></td>
+<tr><td style="padding:5px;border:solid 1px;background: #fff;color: #000;font-size:10px;text-align:center;"" colspan="2" ><b>効果</b></td><td style="padding:5px;border:solid 1px;background: #fff;color: #000;font-size:10px;" colspan="6" ><b>ペットのスキル発動確率＋150％<br>
+主の知識に比例したスキルをスキル使用時に5%の確率で使用</b></td></tr>
+
+<tr>
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>1</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>2</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>3</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>4</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>5</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>6</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>7</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>8</td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>インシネス</b><br><img src="../img/minipet/minipet60.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>タイドナ</b><br><img src="../img/minipet/minipet15.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>エアーター</b><br><img src="../img/minipet/minipet23.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>トゥロウン</b><br><img src="../img/minipet/minipet31.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>レディーア</b><br><img src="../img/minipet/minipet39.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>オキュロス</b><br><img src="../img/minipet/minipet49.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>他 突然変異</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>他 突然変異</b></td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>9</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>10</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>11</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>12</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>13</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>14</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>15</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>16</td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+</tr>
+
+</tbody></table>
+
+
+
+
+
+<table class="table_01">
+<colgroup><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"></colgroup>
+
+<tbody style="font-size:11px;padding:5px;">
+
+<td style="padding:5px;border:solid 1px;background: #000;color: #fff;" colspan="8" ><b>剛柔之道</b></td>
+<tr><td style="padding:5px;border:solid 1px;background: #fff;color: #000;font-size:10px;text-align:center;"" colspan="2" ><b>効果</b></td><td style="padding:5px;border:solid 1px;background: #fff;color: #000;font-size:10px;" colspan="6" ><b>
+ペットのスキル発動確率＋150％<br>
+物理限界ダメージ＋3000<br>
+物理固定限界ダメージ増幅＋50%</b></td></tr>
+
+<tr>
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>1</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>2</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>3</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>4</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>5</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>6</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>7</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>8</td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>クロード</b><br><img src="../img/minipet/minipet58.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>クロード</b><br><img src="../img/minipet/minipet58.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>クロード</b><br><img src="../img/minipet/minipet58.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>クロード</b><br><img src="../img/minipet/minipet58.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>ビスタ</b><br><img src="../img/minipet/minipet62.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>ビスタ</b><br><img src="../img/minipet/minipet62.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>ビスタ</b><br><img src="../img/minipet/minipet62.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>ビスタ</b><br><img src="../img/minipet/minipet62.jpg"style="width:40px;"></td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>9</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>10</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>11</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>12</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>13</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>14</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>15</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>16</td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>ビスタ</b><br><img src="../img/minipet/minipet62.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>ビスタ</b><br><img src="../img/minipet/minipet62.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>ビスタ</b><br><img src="../img/minipet/minipet62.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>ビスタ</b><br><img src="../img/minipet/minipet62.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>クロード</b><br><img src="../img/minipet/minipet58.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>クロード</b><br><img src="../img/minipet/minipet58.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>クロード</b><br><img src="../img/minipet/minipet58.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>クロード</b><br><img src="../img/minipet/minipet58.jpg"style="width:40px;"></td>
+</tr>
+
+</tbody></table>
+
+
+
+
+<table class="table_01">
+<colgroup><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"><col style="width:12%;"></colgroup>
+
+<tbody style="font-size:11px;padding:5px;">
+
+<td style="padding:5px;border:solid 1px;background: #000;color: #fff;" colspan="8" ><b>柔能制剛</b></td>
+<tr><td style="padding:5px;border:solid 1px;background: #fff;color: #000;font-size:10px;text-align:center;"" colspan="2" ><b>効果</b></td><td style="padding:5px;border:solid 1px;background: #fff;color: #000;font-size:10px;" colspan="6" ><b>
+ペットのスキル発動確率＋150％<br>
+物理限界ダメージ＋2000<br>
+物理固定限界ダメージ増幅＋30%</b></td></tr>
+
+<tr>
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>1</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>2</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>3</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>4</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>5</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>6</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>7</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>8</td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>クロード</b><br><img src="../img/minipet/minipet58.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>クロード</b><br><img src="../img/minipet/minipet58.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>クロード</b><br><img src="../img/minipet/minipet58.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>クロード</b><br><img src="../img/minipet/minipet58.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>ビスタ</b><br><img src="../img/minipet/minipet62.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>ビスタ</b><br><img src="../img/minipet/minipet62.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>ビスタ</b><br><img src="../img/minipet/minipet62.jpg"style="width:40px;"></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>ビスタ</b><br><img src="../img/minipet/minipet62.jpg"style="width:40px;"></td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>9</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>10</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>11</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>12</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>13</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>14</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>15</td>
+
+<td style="padding: 5px;border: solid 1px #000;background:#000;color: #fff;">
+ <p style="font-size:10px;text-align:center;"><b>16</td>
+</tr>
+
+<tr>
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background:#fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+
+<td style="padding: 5px;border:solid 1px;background: #fff">
+ <p style="font-size:10px;text-align:center;"><b>全て</b></td>
+</tr>
+
+</tbody></table>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="to_top"><a href="#"><i class="fas fa-chevron-up" title="ページトップへ戻る"></i></a></div>
+
+<script src="https://kit.fontawesome.com/eea364082e.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../js/jquery.inview.min.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/jquery.fancybox.js"></script>
+<script>
+	$('[data-fancybox]').fancybox();
+</script>
+
+
+<address>
+<p style="font-size: 10px;letter-spacing: 0.1em;">
+当サイトで利用している画像及びデータは、「株式会社モビディック」(ゲーム提供者)及び<br>
+「L&amp;KCo.,Ltd.」(ゲーム開発者)に帰属します。<br>
+許可無くご利用又は転用する事は出来ませんので、予めご了承下さい。<br>
+Copyright (C) Re:Birth. All Rights Reserved.</p>
+</address>
+</div>
+
+
+</body>
+</html>
+
