@@ -800,7 +800,7 @@ ul.icons li {
 
 	/*listブロック全体を囲むブロック*/
 		.list-grid1 {
-		grid-template-columns: repeat(3, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
+		grid-template-columns: repeat(4, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
 
 	}
 
