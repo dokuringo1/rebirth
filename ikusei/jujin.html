@@ -78,20 +78,11 @@
 </nav>
 <!------ NAVI --------!>
 
-<!------ SNS ---------!>
-<ul class="h_sns">
-  <li><a href="#" target="_blank"><img src="../img/main/top.png" style="width:25px"></a></li>
-  <li><a href="https://www.redstoneonline.jp/" target="_blank"><img src="../img/red_favicon.png" style="width:25px"></a></li>
-  <li><a href="https://sokomin.github.io/" target="_blank"><img src="../img/sokominlogo.png" style="width:25px"></a></li>
-  <li><a href="https://khbsroom.com/" target="_blank"><img src="../img/khb.jpg" style="width:25px"></a></li>
-</ul>
-<!------ SNS ---------!>
+
 
 </header>
 
-
-
-<div id="sub_top" class="jujin"></div>
+<br><br><br><br>
 
 <div class="pankuzu">
 <ul>
@@ -105,11 +96,243 @@
 <div class="cont_wrap effect start">
 <div class="txt_box">
 
-<h4>獣人育成</h4>
+<p>更新日: <time id="modified_date"></time></p>
+<script>
+/**
+  * ステップ1
+  * ファイルの更新日を取得
+  */
+// HTMLファイルの最終更新日を取得
+const last = new Date(document.lastModified);
+/**
+  * ステップ2
+  * 取得した日付データを「年・月・日」に分けて取得
+  */
+// 取得した日付を「年・月・日」に分けて変数に格納する
+const year = last.getFullYear();
+const month = last.getMonth() + 1;
+const date = last.getDate();
+/**
+  * ステップ3
+  * 「月・日」の値が1桁の場合は先頭に「0」を追加して2桁に修正
+  */
+// 月・日の値を修正した後に格納する変数を用意する
+let fixedMonth = month;
+let fixedDate = date;
+// 月の値が10より小さい場合は先頭に「0」を追加
+if (month < 10) {
+fixedMonth = "0" + month;
+}
+// 日の値が10より小さい場合は先頭に「0」を追加
+if (date < 10) {
+fixedDate = "0" + date;
+}
+/**
+  * ステップ4
+  * 上書き用の日付のテキストを作成
+  */
+// 表示用のテキストを作成 例: 2024年2月8日
+const viewDateText = year + "年" + month + "月" + date + "日";
+// データ用の文字列を作成 例: 2024-02-08
+const datetimeText = year + "-" + fixedMonth + "-" + fixedDate;
+/**
+  * ステップ5
+  * HTMLの要素に値を上書き
+  */
+// 更新日の表示先のHTML要素「time」タグを取得
+const target = document.getElementById('modified_date');
+// timeタグの内容を上書きする 例: 2024年2月8日
+target.textContent = viewDateText;
+// timeタグのdatetime属性を追加する 例: 2024-02-08
+target.setAttribute("datetime", datetimeText);
+</script>
+<br>
 
+
+<p style="color:#9E0000;font-size:20px;font-weight:800;line-height:35px;letter-spacing:1.3px;">2024年10月9日更新↓</p><br>
+
+
+
+恥ずかしい未完成で中途半端な私の装備構成を<br>ありがたいことに皆さん見たいと言ってくださるので記事にしたいと思います！
+<br><br>
+めっちゃ恥ずかしい<br><br>
+OPも中途半端ですし、極めたらまだまだ改善するとこたくさんあります。<Br>
+ダメージも攻撃速度も強化も弱化も<Br>計算もしてないので計算してくださった方はおしえてね⭐️<Br><Br>
+
+⭐️⭐️⭐️⭐️⭐️⭐️困ってる獣人に届けー⭐️⭐️⭐️⭐️⭐️⭐️<br><br>
+
+まずダメージ具合はこんな感じです。<br><br>
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">獣人2パンｷﾀ━━━━(ﾟ∀ﾟ)━━━━!! <a href="https://t.co/eJfhfamFsr">pic.twitter.com/eJfhfamFsr</a></p>&mdash; どくりんご (@rs_dokuringo) <a href="https://twitter.com/rs_dokuringo/status/1843320701438300632?ref_src=twsrc%5Etfw">October 7, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+フォローしてね👍<br><br><br><br>
+
+ステータスはこんな感じ。<br><br>
+
+<img src="../ikusei/jujin/ringojujin1009_0.jpg" alt="獣人装備"><br><br>
+
+<div class="balloon_l">
+  <div class="faceicon">
+    <img src="../img/prof/dokuringo_icon.png" alt="">
+  </div>
+  <p class="says">力を2万超えるように調整しました！<br>物理改変で装備変えたとこは指だけなので下の記事と被ってしまうのですが見たいよーの人の為にもう一度書きます！</p>
+</div>
+
+<br>
+【恩寵の】と【勇気1段】にしてます<br><br>
 
 
 <br>
+<img src="../ikusei/jujin/ringojujin1009_1.jpg" alt="獣人装備"><br><br>
+
+ウポ補助は機能してるのは　<span class="red-p"><b>【光強化】</b></span>のみですね！<br>
+
+これは変更予定で、種族ダメージに変換中です。<br>
+
+
+<br>
+<img src="../ikusei/jujin/ringojujin1009_2.jpg" alt="獣人装備"><br><br>
+
+首は<span class="red-p"><b>【哲学者】</b></span>を使ってます。<br>
+<span class="red-p"><b>精錬の3op目</b></span>を変えるのも忘れずに!!<br><br>
+
+
+<img src="../ikusei/jujin/ringojujin1009_3.jpg" alt="獣人装備"><br><br>
+
+頭は<span class="red-p"><b>【オラクルサークレット】</b></span>です。<br>
+普通ですね！！<br>
+
+<br>
+<img src="../ikusei/jujin/ringojujin1009_4.jpg" alt="獣人装備"><br><br>
+
+耳が<span class="red-p"><b>【封印された禁忌】</b></span>を使ってます。<br>
+<font color="#0000ff">限界突破称号の物理効果と魔法効果</font>が美味しいです！<br>
+
+<font color="#ff00ff">範囲が2M減少</font>するのでそこは残念ポイントです。<br>
+<br>
+もっと残念なのがOPですけど、そこは見なかったことにしてください💋<br>
+
+<br><br>
+<img src="../ikusei/jujin/ringojujin1009_5.jpg" alt="獣人装備"><br><br>
+
+足は<span class="red-p"><b>【マナウォーカー】</b></span>を使ってます。<br>
+<font color="#0000ff">【ファーストステップ】</font>も気になりますが、計算だるいのでいいや<br><br>
+こちらも残念OP。エステル欲しいです！！<br><br>
+
+
+<img src="../ikusei/jujin/ringojujin1009_6.jpg" alt="獣人装備"><br><br>
+
+鎧は<span class="red-p"><b>【カスタムオーダー】</b></span>を使ってます。<br>
+王道装備です！<br><br>
+回避以外つけるものは思いつかないからこのままでいいやゾーンです<br><br>
+
+<img src="../ikusei/jujin/ringojujin1009_7.jpg" alt="獣人装備"><br><br>
+
+グローブは<span class="red-p"><b>【超新星】</b></span>を使ってます。<br>
+
+これも配られた装備1250UMUなのでOPが残念ですが<br>
+このままでいいやゾーンです<br><br>
+
+
+<img src="../ikusei/jujin/ringojujin1009_8.jpg" alt="獣人装備"><br><br>
+
+
+ベルトは<span class="red-p"><b>【ヘクター】</b></span>を使ってます。<br>
+
+＋8だし😇<br><br>
+
+<img src="../ikusei/jujin/ringojujin1009_9.jpg" alt="獣人装備"><br><br>
+
+武器は<span class="red-p"><b>【コラブテッド・フォース・ライトツインサーベル 】</b></span>を使ってます。<br>
+
+異次元とか下手なのでやりません。<br>
+<font color="#0000ff">限界突破称号</font>が美味しいです<br>
+やっぱり強いですよねこの武器!!<br>
+<br>
+
+<br><h4>指達</h4>
+
+
+<img src="../ikusei/jujin/ringojujin1009_14.jpg" alt="獣人装備"><br><br>
+<img src="../ikusei/jujin/ringojujin1009_15.jpg" alt="獣人装備"><br><br>
+<img src="../ikusei/jujin/ringojujin1009_16.jpg" alt="獣人装備"><br><br>
+<img src="../ikusei/jujin/ringojujin1009_17.jpg" alt="獣人装備"><br><br>
+<img src="../ikusei/jujin/ringojujin1009_18.jpg" alt="獣人装備"><br><br>
+<img src="../ikusei/jujin/ringojujin1009_19.jpg" alt="獣人装備"><br><br>
+<img src="../ikusei/jujin/ringojujin1009_20.jpg" alt="獣人装備"><br><br>
+
+
+
+<br><h4>表記</h4>
+
+アンビートの表記はこんな感じです！<br><br>
+
+<img src="../ikusei/jujin/ringojujin1009_10.jpg" alt="獣人装備"><br><br>
+
+<img src="../ikusei/jujin/ringojujin1009_11.jpg" alt="獣人装備"><br><br>
+
+
+<br><h4>クレスト</h4>
+
+改変に向けて準備しました。<br>
+この紫クレストは大きいと思いました。<br><br>
+
+<img src="../ikusei/jujin/ringojujin1009_22.jpg" alt="獣人装備"><br><br>
+
+
+<br><h4>ミニペット</h4>
+
+たまたま譲っていただいたミニペット達<br>
+この子達の存在はかなり大きいと思います！<br><br>
+
+<img src="../ikusei/jujin/ringojujin1009_23.jpg" alt="獣人装備"><br><br>
+<img src="../ikusei/jujin/ringojujin1009_24.jpg" alt="獣人装備"><br><br>
+
+
+<br><h4>クリーチャー</h4>
+
+ああ・・・恥ずかしい!!!!!!!!!!!!!<br>
+中途半端過ぎて見せたくないのですが!!!!!!!!!!!!!<br><br>
+
+<img src="../ikusei/jujin/ringojujin1009_25.jpg" alt="獣人装備"><br><br>
+
+変更点は<span class="red-p"><b>【動物ダメージ】</b></span>です。<br>
+この子を追加すると他のバランスが崩れてちょっと気持ち悪いのですけど・・・<br>
+今後綺麗に整えたいなって所です。<br><br>
+
+
+
+<br><h4>変更箇所</h4>
+
+この二つを頑張ってやりました！<br>
+2パンになったのはこのおかげです！<br><br>
+
+<img src="../ikusei/jujin/ringojujin1009_12.jpg" alt="獣人装備"><br><br>
+
+<br><h4>超越</h4>
+
+ごくごく普通です！<br>もう一つ入るなら魔力吸収を入れます。<br><br>
+
+<img src="../ikusei/jujin/ringojujin1009_21.jpg" alt="獣人装備"><br><br>
+
+
+
+
+
+以上、私の装備でした！<br>
+OPは異次元ないので揃えやすいのかなって思います！<br>
+また何か思いついたら更新します( ・∇・)
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br>
 
 <p style="
     color: #9E0000;
@@ -117,7 +340,7 @@
     font-weight: 800;
     line-height: 35px;
     letter-spacing: 1.3px;
-">2024年7月8日更新!</p><br><br>限界突破改変まで待機中です。<br>
+">2024年7月8日更新↓</p><br><br>限界突破改変まで待機中です。<br>
 <span class="line_yellow">2024年6月物理改変により厳しい時代に突入</span><br><br>
 
 
