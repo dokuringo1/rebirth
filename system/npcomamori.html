@@ -2,21 +2,18 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-
-<title>NPCお守り | Re:Birth</title>
+<title>NPCお守り一覧 | Re:Birth</title>
 <meta name="Keywords" content="レッドストーン,経験値クエスト,クエスト攻略,NPCお守り" />
 <meta name="Description" content="レッドストーンクエスト攻略情報" />
-<meta property="og:url" content="https://rebirth-rs.com/system/npcomamori.html" />
-<meta property="og:type" content="NPCお守り" />
-<meta property="og:title" content="NPCお守り" />
-<meta property="og:description" content=" レッドストーンNPCお守り" />
+<meta property="og:url" content="https://rs-rebirth.github.io/system/npcomamori.html.html" />
+<meta property="og:type" content="NPCお守り一覧" />
+<meta property="og:title" content="NPCお守り一覧" />
+<meta property="og:description" content="NPCお守り一覧" />
 <meta property="og:site_name" content="Re:Birth" />
 <meta property="og:image" content="https://rebirth-rs.com/img/thumbnail/npc_sum.png" />
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://rebirth-rs.com/img/thumbnail/npc_sum.png" />
-
 <!------ stylesheet ---------!>
 
 <link rel="stylesheet" href="../css/style.css" />
@@ -33,25 +30,13 @@
 
 <!------ stylesheet ---------!>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-240293817-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-240293817-1');
-</script>
-<!-- Google tag (gtag.js) -->
-
 </head>
-<body style="display: block;font-size: 11px;line-height: 1.3;">
+<body>
 
-<header class="txt_w">
-
+<header>
 
 <div class="bg_bl"></div>
-<h1><a href="../index.html"><img src="../img/logo.png" alt="Re:Birth"></a></h1>
+<h1><a href="../index.html"><a href="../img/logo.png" alt="Re:Birth"></a></h1>
 
 <a class="menu_btn">
     <span class="top"></span>
@@ -59,8 +44,6 @@
     <span class="bottom"></span>
 </a>
 
-
-<!------ NAVI --------!>
 <nav id="g_navi">
     <ul>
     <li><a href="../index.html">HOME</a></li>
@@ -71,33 +54,88 @@
     <li><a href="../system/karibatekisei.html">適正狩場</a></li>
     </ul>
 </nav>
-<!------ NAVI --------!>
 
-<!------ SNS ---------!>
-<ul class="h_sns">
-  <li><a href="#" target="_blank"><img src="../img/main/top.png" style="width:25px"></a></li>
-  <li><a href="https://www.redstoneonline.jp/" target="_blank"><img src="../img/red_favicon.png" style="width:25px"></a></li>
-  <li><a href="https://sokomin.github.io/" target="_blank"><img src="../img/sokominlogo.png" style="width:25px"></a></li>
-  <li><a href="https://khbsroom.com/" target="_blank"><img src="../img/khb.jpg" style="width:25px"></a></li>
-</ul>
-<!------ SNS ---------!>
+
 
 </header>
 
 
-<div id="sub_top" class="kaihou"></div>
+<br><br><br><br>
 
 <div class="pankuzu">
 <ul>
 <li><a href="../index.html"><i class="fas fa-home"></i>HOME</a></li>
 <li><a href="../system/system.html">システム</a></li>
-<li>NPCお守り</li>
+<li>NPSお守り一覧</li>
 </ul>
 </div>
 
 <div class="content">
 <div class="cont_wrap effect">
 <div class="txt_box">
+
+<p>更新日: <time id="modified_date"></time></p>
+<script>
+/**
+  * ステップ1
+  * ファイルの更新日を取得
+  */
+// HTMLファイルの最終更新日を取得
+const last = new Date(document.lastModified);
+/**
+  * ステップ2
+  * 取得した日付データを「年・月・日」に分けて取得
+  */
+// 取得した日付を「年・月・日」に分けて変数に格納する
+const year = last.getFullYear();
+const month = last.getMonth() + 1;
+const date = last.getDate();
+/**
+  * ステップ3
+  * 「月・日」の値が1桁の場合は先頭に「0」を追加して2桁に修正
+  */
+// 月・日の値を修正した後に格納する変数を用意する
+let fixedMonth = month;
+let fixedDate = date;
+// 月の値が10より小さい場合は先頭に「0」を追加
+if (month < 10) {
+fixedMonth = "0" + month;
+}
+// 日の値が10より小さい場合は先頭に「0」を追加
+if (date < 10) {
+fixedDate = "0" + date;
+}
+/**
+  * ステップ4
+  * 上書き用の日付のテキストを作成
+  */
+// 表示用のテキストを作成 例: 2024年2月8日
+const viewDateText = year + "年" + month + "月" + date + "日";
+// データ用の文字列を作成 例: 2024-02-08
+const datetimeText = year + "-" + fixedMonth + "-" + fixedDate;
+/**
+  * ステップ5
+  * HTMLの要素に値を上書き
+  */
+// 更新日の表示先のHTML要素「time」タグを取得
+const target = document.getElementById('modified_date');
+// timeタグの内容を上書きする 例: 2024年2月8日
+target.textContent = viewDateText;
+// timeタグのdatetime属性を追加する 例: 2024-02-08
+target.setAttribute("datetime", datetimeText);
+</script>
+<br>
+
+
+
+
+<br>
+<h4>NPC</h4>
+
+<p  style="color: #000;font-weight: 200;">
+2024/04/25 ◼️ <a href="https://www.redstoneonline.jp/bbs/17/view?ano=533#UUX/tdoL6NqhcQrAL+8HQJqk95ZOJiYKdBhAUAT4LC0=" target="_blank" style="color: #000;font-weight: 200;">「選択[人気NPC称号]」から出現するアイテム一覧</a><br>
+
+2024/03/14 ◼️ <a href="https://www.redstoneonline.jp/bbs/17/view?ano=384#UUX/tdoL6NqhcQrAL+8HQJqk95ZOJiYKdBhAUAT4LC0=" target="_blank" style="color: #000;font-weight: 200;">「選択[厳選NPC称号]」から出現するアイテム一覧</a><br></p><br>
 
 
 <table cellpadding="0" cellspacing="0" border="1" ><tbody>
@@ -169,7 +207,7 @@
 <tr>
  <th bgcolor="#d2b48c" width="33%"><center><b>ガスピル（第3枠）<br>スキルレベル+8</b></center></th>
  <th bgcolor="#d2b48c" width="33%"><center><b>リラ（第1,3枠）<br>状態異常抵抗+80％</b></center></th>
- <th bgcolor="#d2b48c" width="33%"><center><b>ジョン・マルコ（）</b><br>魔法アイテムドロップ確率+40％</center></th>
+ <th bgcolor="#d2b48c" width="33%"><center><b>ジョン・マルコ（第3枠）</b><br>ユニークアイテムドロップ確率+60％</center></th>
 </tr>
 
 <tr>
@@ -181,7 +219,7 @@
 <tr>
  <th bgcolor="#d2b48c" width="33%"><center><b>ニケ（第2枠）<br>移動速度+33％</b></center></th>
  <th bgcolor="#d2b48c" width="33%"><center><b>ソラ（第2枠）<br>魔法抵抗+60％</b></center></th>
- <th bgcolor="#d2b48c" width="33%"><center><b>ロングッシュ（？）</b><br>魔法アイテムドロップ確率+40％</center></th>
+ <th bgcolor="#d2b48c" width="33%"><center><b>ロングッシュ（第3枠）</b><br>魔法アイテムドロップ確率+80％</center></th>
 </tr>
 
 <tr>
@@ -242,6 +280,21 @@
  </tbody>
 </table>
 
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
 <div class="writer-profile-card">
     <div class="wp-left">
         <div class="wp-label"><p>写真提供</p></div>
@@ -263,46 +316,36 @@
 <br>
 
 
-</div>
-</div>
-
 
 
 <!------------------------foot------------------------!>
 
+<footer>
 <div class="to_top"><a href="#"><i class="fas fa-chevron-up" title="ページトップへ戻る"></i></a></div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="../js/jquery.inview.min.js"></script>
-<script src="../js/script.js"></script>
 
 <script src="https://kit.fontawesome.com/eea364082e.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/jquery.sublimeSlideshow.js"></script>
-<script src="js/jquery.inview.min.js"></script>
-<script src="js/script.js"></script>
-<script>
-$('.works_list li a').matchHeight();
-</script>
+<script src="../js/jquery.inview.min.js"></script>
+<script src="../js/script.js"></script>
 <script src="../js/jquery.fancybox.js"></script>
 <script>
 	$('[data-fancybox]').fancybox();
 </script>
 
-<footer>
+
 
 <address>
-<p style="font-size: 12px;padding: 10px;">
-当サイトで利用している画像及びデータは、「株式会社モビディック 」（ゲーム提供者）及び「L&amp;K Co., Ltd.」（ゲーム開発者）に帰属します。<br>
-許可無くご利用又は転用する事は出来ませんので、予めご了承下さい。<br></p>
-
+<p style="font-size: 10px;letter-spacing: 0.1em;">
+当サイトで利用している画像及びデータは、「株式会社モビディック」(ゲーム提供者)及び<br>
+「L&amp;KCo.,Ltd.」(ゲーム開発者)に帰属します。<br>
+許可無くご利用又は転用する事は出来ませんので、予めご了承下さい。<br>
+Copyright (C) Re:Birth. All Rights Reserved.</p>
+</address>
 </div>
 
-Copyright (C) Re:Birth. All Rights Reserved
 
-</address>
-
-</footer>
 </body>
 </html>
+
 
 <!------------------------foot------------------------!>
