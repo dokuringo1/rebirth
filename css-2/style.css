@@ -120,13 +120,138 @@ a:hover {
 ---------------------------------------------------------------------------*/
 #container {
 
-	max-width: 1200px;				/*最大幅。これ以上広がりません。*/
+	max-width: 1500px;				/*最大幅。これ以上広がりません。*/
 	padding: 0 3vw;					/*上下、左右へのコンテナー内の余白。100vwが画面幅100%の事。*/
 	display: flex;					/*flexを使う指定*/
 	flex-direction: column;			/*子要素を縦並びにする*/
 	justify-content: space-between;	/*並びかたの種類の指定*/
 	margin: 0 auto;
 }
+
+/*
+無限ループ
+-------------------------------------------*/
+.loop_wrap_base {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+
+}
+
+
+.loop_wrap_base h2 {
+	font-weight: normal;
+	color: #111;
+	text-align: center;
+	line-height: 1.2;
+	padding: 10px;
+	font-size: 24px;
+}
+.loop_wrap_base h2 span {
+	letter-spacing: 0.2em;
+	font-size: 14px;
+	color: #555;
+}
+
+.loop_wrap {
+  display: flex;
+  width: 220%;
+  height: auto;
+}
+
+.loop_wrap ul {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flexbox;
+	display: -moz-flexbox;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-box-lines: multiple;
+	-moz-box-lines: multiple;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.loop_wrap ul li {
+	width: 20%;
+}
+
+.loop_wrap ul li a {
+	display: block;
+	text-decoration: none;
+	color: #555;
+	text-align: center;
+	line-height: 1.6;
+	font-size: 14px;
+	position: relative;
+}
+.loop_wrap ul li a img {
+	width: 100%;
+	display: block;
+	margin-bottom: 5px;
+    padding: 2px;
+}
+
+.loop_wrap ul li a span {
+	display: inline-block;
+	background-color: #36BEAD;
+	color: #FFF;
+	font-size: 12px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5px;
+	letter-spacing: 1px;
+	z-index: 10;
+}
+
+.loop_wrap ul li a span.cl_2 {
+	background-color: #333;
+}
+
+.loop_wrap ul li a span.cl_3 {
+	background-color: #FF9900;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.loop_wrap ul:first-child {
+  animation: loop 50s -25s linear infinite;
+}
+
+.loop_wrap ul:last-child {
+  animation: loop2 50s linear infinite;
+}
+
+.loop_wrap:hover ul {
+  animation-play-state: paused;
+}
+
+
 
 
 /*ヘッダー
