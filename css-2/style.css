@@ -180,6 +180,10 @@ a:hover {
 	justify-content: space-between;
 }
 
+ul {
+  list-style: none;
+}
+
 .loop_wrap ul li {
 	width: 20%;
 }
@@ -980,6 +984,8 @@ ul.icons li {
     border-radius: 10px;
     filter: drop-shadow(1px 01px 3px #000);
 }
+
+
 
 
 /*FAQ
