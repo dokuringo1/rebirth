@@ -849,6 +849,7 @@ ul.icons li {
 	display: grid;
         background: #f8f4e1;
         border: 1px solid #3c0201;
+    padding-bottom: 10px;
 
 }
 
@@ -914,7 +915,7 @@ ul.icons li {
 
 	/*listブロック全体を囲むブロック*/
 	.list-grid1 .list {
-		padding: 5px;
+        padding-left: 5px;
 
 	}
 
