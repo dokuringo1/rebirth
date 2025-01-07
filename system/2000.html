@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<title>出現するアイテム一覧 | Re:Birth</title>
+<meta name="Keywords" content="レッドストーン,経験値クエスト,クエスト攻略,出現するアイテム一覧" />
+<meta name="Description" content="レッドストーンクエスト攻略情報" />
+<meta property="og:url" content="https://rs-rebirth.github.io/system/costume.html" />
+<meta property="og:type" content="出現するアイテム一覧" />
+<meta property="og:title" content="出現するアイテム一覧" />
+<meta property="og:description" content="レッドストーン出現するアイテム一覧" />
+<meta property="og:site_name" content="Re:Birth" />
+<meta property="og:image" content="https://rebirth-rs.com/img/thumbnail/costume_sum.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://rebirth-rs.com/img/thumbnail/costume_sum.jpg" />
+<!------ stylesheet ---------!>
+
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/jquery.fancybox.css">
+
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+<link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+
+<link rel="manifest" href="..//manifest.webmanifest">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" rel="stylesheet">
+
+<!------ stylesheet ---------!>
+
+</head>
+<body>
+
+<header>
+
+<div class="bg_bl"></div>
+<h1><a href="../index.html"><img src="../img/logo.png" alt="Re:Birth"></a></h1>
+
+<a class="menu_btn">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+</a>
+
+<nav id="g_navi">
+    <ul>
+    <li><a href="../index.html">HOME</a></li>
+    <li><a href="../system/creature.html">クリーチャー</a></li>
+    <li><a href="../quest/quest.html">クエスト</a></li>
+    <li><a href="../system/kaihouhenkan.html">解放変換</a></li>
+    <li><a href="../system/yaty_yami.html">闇商人</a></li>
+    <li><a href="../system/karibatekisei.html">適正狩場</a></li>
+    </ul>
+</nav>
+
+
+
+</header>
+
+
+<br><br><br><br>
+
+<div class="pankuzu">
+<ul>
+<li><a href="../index.html"><i class="fas fa-home"></i>HOME</a></li>
+<li><a href="../system/system.html">システム</a></li>
+<li>レベル上限拡張</li>
+</ul>
+</div>
+
+<div class="content">
+<div class="cont_wrap effect">
+<div class="txt_box" style="
+    a {
+    font-weight: 300;
+    color: #000000;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    transition: 0.2s linear;
+};
+">
+
+
+<p>更新日: <time id="modified_date"></time></p>
+<script>
+/**
+  * ステップ1
+  * ファイルの更新日を取得
+  */
+// HTMLファイルの最終更新日を取得
+const last = new Date(document.lastModified);
+/**
+  * ステップ2
+  * 取得した日付データを「年・月・日」に分けて取得
+  */
+// 取得した日付を「年・月・日」に分けて変数に格納する
+const year = last.getFullYear();
+const month = last.getMonth() + 1;
+const date = last.getDate();
+/**
+  * ステップ3
+  * 「月・日」の値が1桁の場合は先頭に「0」を追加して2桁に修正
+  */
+// 月・日の値を修正した後に格納する変数を用意する
+let fixedMonth = month;
+let fixedDate = date;
+// 月の値が10より小さい場合は先頭に「0」を追加
+if (month < 10) {
+fixedMonth = "0" + month;
+}
+// 日の値が10より小さい場合は先頭に「0」を追加
+if (date < 10) {
+fixedDate = "0" + date;
+}
+/**
+  * ステップ4
+  * 上書き用の日付のテキストを作成
+  */
+// 表示用のテキストを作成 例: 2024年2月8日
+const viewDateText = year + "年" + month + "月" + date + "日";
+// データ用の文字列を作成 例: 2024-02-08
+const datetimeText = year + "-" + fixedMonth + "-" + fixedDate;
+/**
+  * ステップ5
+  * HTMLの要素に値を上書き
+  */
+// 更新日の表示先のHTML要素「time」タグを取得
+const target = document.getElementById('modified_date');
+// timeタグの内容を上書きする 例: 2024年2月8日
+target.textContent = viewDateText;
+// timeタグのdatetime属性を追加する 例: 2024-02-08
+target.setAttribute("datetime", datetimeText);
+</script>
+<br>
+
+<p  style="color: #000;font-weight: 200;">
+
+
+<h4>特殊ルール</h4>
+
+<p>◼️ 2000レベルから新しいレベルシステムが反映され、<span class="inline_sky">2000レベルを達成したキャラクターは2000レベル以下の狩場では経験値を獲得することができません。</span><br>
+
+◼️ 又、2000レベル以下のキャラクターが<span class="inline_sky">2000レベル以降の狩り場で経験値を獲得することは不可能です。</span><br><br></p>
+
+<img src="../system/img/omuni/2000_2.png"style="width:600px"><br><br>
+
+
+<h4>エフェクト</h4>
+
+<p>
+◼️2000レベルに達成すると、転生エフェクトの代わりに、新規のエフェクトが追加されます。<br>
+◼️エフェクトはシステムオペレーションでOFFにすることが可能です。<br><br>
+</p>
+
+<img src="../system/img/omuni/2000_3.gif"style="width:220px;">
+
+<img src="../system/img/omuni/2000_1.gif">
+
+
+<h4>オムニスキルポイントのゲージ</h4><br>
+<p>
+◼️狩りで取得される経験値に既存スキルポイントは含まれません。<br>
+◼️新規スキルポイント、オムニスキルポイントのゲージにのみ反映されます。<br><br>
+</p>
+
+<img src="../system/img/omuni/2000_4.png"style="width:620px;"><br><br>
+
+<p>
+◼️レベルUP時、ステータスポイントと新規スキルポイント<span class="red-p"><b>(10％上昇のたびに1ポイント)</b></span>が獲得されます。<br>
+◼️レベル比例ステータス増加オプションの場合、最大レベル2000と上限が反映され、レベルUPしてもこれ以上、上昇しません。<br>
+◼️例)－2000レベル基準: レベル2UPに当たり、健康1ポイント増加オプション>増加される健康ポイント: 1000<br>
+　 －2002レベル基準: レベル2UPに当たり、健康1ポイント増加オプション>増加される健康ポイント: 1000、増加ポイントなし<br>
+◼️＞着用装備のレベル増加オプションはキャラクターレベルの合計が2000レベルと上限が反映されます。<br>
+◼️例)　1999レベル＋装備帝王バッジ(＋200レベル)＝装備着用可能レベルが2000レベルとなります。<br>
+</p>
+ 
+<br>
+<h4>2000レベル以上の追加経験値の獲得方法</h4>
+
+<img src="../system/img/omuni/2000_5.png"style="width:400px;"><br><br>
+
+<span class="red-p"><b>※2000レベル以降、経験値の増加効果が得られないアイテムは関連ツールチップが追加されました。<br>
+
+※新規追加されたアイテム、「ノヴァ・ポータル」と「悪魔狩りの案配」以外のポータル系アイテムは<br>
+2000レベル以降の経験値アップ効果が適用されません。</b></span><br><br>
+
+2000レベル以降パーティー全員のレベル差によるペナルティー<br>
+　　　－パーティープレイ時、(パーティー員の中の最高レベル)－(経験値獲得者のレベル)<br><br>
+
+<img src="../system/img/omuni/2000_6.png"style="width:400px;"><br><br>
+
+<h4>2000レベル以降のギルド旗バフスキル</h4>
+
+2000レベル以降のギルド旗バフスキルが追加されます。<br><br>
+
+
+<img src="../system/img/omuni/2000_7.png"style="width:400px;"><br><br>
+
+
+
+
+<h4>2000レベル以降のデスペナ</h4>
+
+<img src="../system/img/omuni/2000_8.png"style="width:400px;"><br><br>
+<p>
+2000レベル以降、既存の経験値増加アイテムは使用不可となり、使用可能な有料アイテム3種類が新しく追加されます。
+</p>
+
+<br><br>
+<h4>ノヴァ・ポータル</h4>
+
+<img src="../system/img/omuni/2000_9.png"style="width:800px;"><br><br>
+
+<p>
+既存のスフィアアイテムと同様で、所持時2000レベル以降の経験値獲得に25％追加経験値が獲得されます。<br>
+
+※2000レベル未満のキャラクターは使用できません。<br>
+
+※アカウント内の他のキャラクターとは共有されません<br><br><br>
+</p>
+
+<h4>課金アイテム【悪魔狩りの案配1490GEM】</h4>
+
+<p>
+◼️悪魔狩りの案配を使用すると、<span class="red-p"><b>獲得経験値量が15倍増加</b></span>します。<br>
+◼️<span class="red-p"><b>案配は経験値を取得するたびに消耗され</b></span>、獲得する経験値量が多いほど早く消耗されます。<br>
+◼️悪魔狩りの案配はキャラクター単位で適用され、<span class="red-p"><b>アカウント内の他のキャラクターとは共有されません。</b></span><br>
+◼️悪魔狩りの案配はチャージ型アイテムとして、使用後にチャージすることが可能です。<br><br>
+
+※悪魔狩りの案配の使用量が50％の際に1つのアイテムを追加チャージすると、<br>
+チャージされた個数に合算され「ｘ２」と表記されます。使用中の案配アイテムの％は維持されます。<br><br>
+
+◼️クエスト報酬には影響がなく、<span class="red-p"><b>狩りの際に獲得される経験値にのみ適用</b></span>されます。<br>
+◼️<span class="red-p">スフィアアイテムのバフ、スターベリーアイテムと重複で使用可能です。</span>
+
+
+</p>
+
+
+
+<div id="daily"><font color="#fff">スターベリ【1日1回デイリー】</font></div><br><br><br><br>
+
+<h4>スターベリ【1日1回デイリー】</h4>
+
+<img src="../img/next.jpg" style="width:25px;"> ヤシの木から入り<span class="inline_grn">【ヒューニティ】</span>と話して<span class="red-p">【スターベリー】をもらう。</span><br><br>
+
+<img src="../quest/img/2000/11.jpg"style="width:400px;"><br><br>
+
+<img src="../quest/img/2000/13.jpg"style="width:400px;"><br><br>
+
+<h4>スターベリー</h4>
+
+<img src="../system/img/omuni/2000_10.png"style="width:800px;"><br><br>
+<p>
+◼️スターベリーアイテムは、デイリークエストを通じて手に入ります。<br>
+◼️獲得したスターベリーアイテムは<span class="red-p"><b>毎日午前6時に削除され、効果が初期化します。</b></span><br>
+
+
+◼️2000レベル以上のキャラクター専用の果実アイテムとして、<span class="red-p"><b>使用すると経験値10倍、ブラッドバーンインクのドロップ率が25倍増加</b></span>します。<br>
+
+
+◼️スフィアアイテムのバフ、悪魔狩りの案配アイテムと重複で使用可能です。<br>
+◼️クエストの報酬には影響がなく、狩り経験値にのみ適用されます。<br><br><br>
+</p>
+
+
+<h4>新規強化の財貨情報</h4>
+
+<img src="../system/img/omuni/2000_11.png"style="width:800px;"><br><br>
+<p>
+◼️既存の異界の強化石と同様に、<span class="red-p"><b>ブラックファイヤー外郭のNPCネルバを通じてエンチャントが可能</b></span>です。<br>
+　※異界の強化の前にクエスト「反撃の始まり」が完了した状態でのみエンチャントが可能です。<br>
+</p>
+
+<p>◼️新規異界の強化石をエンチャントの際、登場するオプションは既存の異界の強化オプションより高い数値で設定されております。</p><br>
+
+<img src="../system/img/omuni/2000_12.png"style="width:500px;"><br><br>
+
+新規の異界の強化石をエンチャントする際に登場する新規オプションが6種類追加されます。<br><br><br>
+
+
+<div id="kyouka"><font color="#fff">強化石</font></div><br><br><br><br>
+
+
+<h4>新規オプションが6種類</h4>
+ <img src="../system/img/omuni/2000_13.png"style="width:500px;"><br><br>
+
+
+
+<span class="red-p"><b>新規異界の強化石を使ってクリーチャーを強化する場合、経験値「260」とクリーチャー成長促進の秘薬3個が消耗されます。</b></span>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="to_top"><a href="#"><i class="fas fa-chevron-up" title="ページトップへ戻る"></i></a></div>
+
+<script src="https://kit.fontawesome.com/eea364082e.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../js/jquery.inview.min.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/jquery.fancybox.js"></script>
+<script>
+	$('[data-fancybox]').fancybox();
+</script>
+
+
+<address>
+<p style="font-size: 10px;letter-spacing: 0.1em;">
+当サイトで利用している画像及びデータは、「株式会社モビディック」(ゲーム提供者)及び<br>
+「L&amp;KCo.,Ltd.」(ゲーム開発者)に帰属します。<br>
+許可無くご利用又は転用する事は出来ませんので、予めご了承下さい。<br>
+Copyright (C) Re:Birth. All Rights Reserved.</p>
+</address>
+</div>
+
+
+</body>
+</html>
+
