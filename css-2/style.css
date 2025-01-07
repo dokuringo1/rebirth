@@ -1230,8 +1230,8 @@ ul.slick-dots li.slick-active button {
 /*スライドショーを囲むブロック*/
 .thumbnail-slide {
 background: #f8f4e1;
-    padding: 10px 10px;
-    border: 1px solid #3c0201;
+        padding: 2px;
+
 }
 
 /*各アイテム間のマージン*/
