@@ -458,8 +458,8 @@ font-size: 20px;
 
 .content .cont_wrap .txt_box {
 
-	padding: 20px;
-	margin: 20px;
+	padding: 5px;
+	margin: 0px;
 }
 .content .cont_wrap .txt_box h3 {
 	margin-top: 0px;
@@ -3358,7 +3358,7 @@ h6:before {
 .line_yellow {
     display: inline;
     background-position: left -100% center;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     font-weight: bold;
     background-size: 200% 0.6em;
     background-repeat: repeat-x;
