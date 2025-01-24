@@ -845,11 +845,11 @@ ul.icons li {
 /*list-grid1, list-grid2 共通
 ---------------------------------------------------------------------------*/
 /*listブロック全体を囲むブロック*/
-.list-grid1,.list-grid2 {
+.list-grid1,.list-grid2,.list-grid3  {
 	display: grid;
         background: #f8f4e1;
         border: 1px solid #3c0201;
-    padding-bottom: 10px;
+        padding-bottom: 10px;
 
 }
 
@@ -865,7 +865,7 @@ ul.icons li {
 
 
 /*ボックス１個あたり*/
-.list-grid1 .list,.list-grid2 .list {
+.list-grid1 .list,.list-grid2,.list-grid3 .list {
 	position: relative;
 
 
@@ -873,12 +873,12 @@ ul.icons li {
 }
 
 /*ブロック内のp要素*/
-.list-grid1 p,.list-grid2 p {
+.list-grid1 p,.list-grid2,.list-grid3 p {
 	margin: 0;padding: 0;
 }
 
 /*アイコン*/
-.list-grid1 .newicon,.list-grid2 .newicon {
+.list-grid1 .newicon,.list-grid2,.list-grid3 .newicon {
 	position: absolute;
 	left: -5px;	/*左からの配置場所。マイナスがついているので本来の向きとは逆に移動する。*/
 	top: -10px;	/*上からの配置場所。マイナスがついているので本来の向きとは逆に移動する。*/
@@ -893,7 +893,8 @@ ul.icons li {
 
 /*list内の全ての要素のマージンを一旦リセット*/
 .list-grid1 .list *,
-.list-grid2 .list * {
+.list-grid2 .list *,
+.list-grid3 .list * {
 	margin: 0;
 }
 
@@ -901,7 +902,8 @@ ul.icons li {
 
 /*ボックス内のp要素*/
 .list-grid1 .list p,
-.list-grid2 .list p {
+.list-grid2 .list p,
+.list-grid3 .list p {
 	font-size: 0.85rem;	/*文字サイズを85%に*/
 	line-height: 1.5;	/*行間を少し狭く*/
 }
@@ -922,6 +924,9 @@ ul.icons li {
 	.list-grid1 {
 		grid-template-columns: repeat(2, 1fr);
 
+	}
+	.list-grid3 {
+		grid-template-columns: repeat(3, 1fr);
 
 	}
 
@@ -934,6 +939,10 @@ ul.icons li {
 	/*listブロック全体を囲むブロック*/
 		.list-grid1 {
 		grid-template-columns: repeat(4, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
+
+	}
+		.list-grid3 {
+		grid-template-columns: repeat(7, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
 
 	}
 
@@ -951,7 +960,7 @@ ul.icons li {
 		grid-template-rows: auto 1fr;	/*１つ目（この場合はfigure要素のサイズ）は自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
 		box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
 
-		line-height: 1px;
+
 }
 
 /*ボックス内のfigure画像*/
