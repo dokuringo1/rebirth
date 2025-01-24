@@ -926,7 +926,7 @@ ul.icons li {
 
 	}
 	.list-grid3 {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 
 	}
 
